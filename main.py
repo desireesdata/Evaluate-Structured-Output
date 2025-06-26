@@ -3,6 +3,7 @@ from typing import Dict, List, Union, Literal, Tuple
 from difflib import SequenceMatcher
 import numpy as np
 from scipy.optimize import linear_sum_assignment
+import jellyfish
 
 FieldName = Literal["nom", "references_pages"]
 RawEntry = Dict[FieldName, Union[str, List[int]]]
@@ -17,6 +18,7 @@ class Entry:
         return self.data
 
     def normalize_field(self, field: FieldName) -> str:
+        "Simple normalization"
         val = self.data.get(field, "")
 
         if field == "nom":
@@ -33,12 +35,15 @@ class Entry:
         return str(val)
 
     def distance_to(self, other: 'Entry') -> float:
+        """Return distance between him and an another object"""
+        """NB : ==> average field-to-field distances """
         def field_distance(f1: str, f2: str) -> float:
             return 1 - SequenceMatcher(None, f1, f2).ratio()
 
         total = 0.0
         count = 0
 
+        # Compare fields with the same label
         for field in ["nom", "references_pages"]:
             norm_self = self.normalize_field(field)
             norm_other = other.normalize_field(field)
@@ -48,6 +53,28 @@ class Entry:
                 count += 1
 
         return total / count if count else 1.0
+    
+    @staticmethod
+    def normalized_levenshtein(s1: str, s2: str) -> float:
+        if not s1 and not s2:
+            return 0.0
+        return jellyfish.levenshtein_distance(s1, s2) / max(len(s1), len(s2))
+    
+    def distance_to_levenshtein(self, other: 'Entry') -> float:
+        """Return distance with an another entry"""
+        """NB : based on Levenshtein distance (normalized)"""
+        total = 0.0
+        count = 0
+        for field in ["nom", "references_pages"]:
+            norm_self = self.normalize_field(field)
+            norm_other = other.normalize_field(field)
+
+            if norm_self or norm_other:
+                dist = self.normalized_levenshtein(norm_self, norm_other)
+                total += dist
+                count += 1
+        return total / count if count else 1.0
+
     
 class Matcher:
     def __init__(self, entries_a: List[Entry], entries_b: List[Entry]):
@@ -63,6 +90,7 @@ class Matcher:
         for i, entry_a in enumerate(self.entries_a):
             for j, entry_b in enumerate(self.entries_b):
                 cost_matrix[i, j] = entry_a.distance_to(entry_b)
+                # cost_matrix[i, j] = entry_a.distance_to_levenshtein(entry_b)
 
         return cost_matrix
 
@@ -111,10 +139,11 @@ class Matcher:
         }
 
 if __name__ == "__main__":
+    v = "01_vt"
     with open("gt/low_vt.json") as f:
         truth_file = json.load(f)
 
-    with open("predictions/low_without_incomplete_entry/01_vt.json") as f:
+    with open(f"predictions/low_without_incomplete_entry/{v}.json") as f:
         predicted_file = json.load(f)
 
     truth = truth_file["listes_des_intervenants"]
