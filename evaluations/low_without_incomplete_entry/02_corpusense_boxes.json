@@ -13,14 +13,9 @@
       "references_pages": "<renvoi d'index>"
     },
     {
-      "nom": "Barthou (Louis), ministre de la guerre",
-      "references_pages": [
-        2
-      ]
-    },
-    {
       "nom": "Barthou (Louis)",
       "references_pages": [
+        2,
         394,
         396,
         397,
@@ -36,7 +31,7 @@
       ]
     },
     {
-      "nom": "Beaumont (Jean)",
+      "nom": "Beaumont (Jear)",
       "references_pages": [
         477,
         1087,
@@ -62,7 +57,7 @@
       ]
     },
     {
-      "nom": "Bérard (Léon), garde des sceaux, ministre de la justice",
+      "nom": "Bérard (Léon)",
       "references_pages": [
         35,
         132,
@@ -148,7 +143,7 @@
       ]
     },
     {
-      "nom": "Bergeon (Benoît-Charles)",
+      "nom": "Bergeon (Benoft-Charles)",
       "references_pages": [
         517,
         520,
@@ -166,7 +161,6 @@
         317,
         508,
         603,
-        896,
         616,
         1099,
         1764
@@ -183,7 +177,7 @@
       ]
     },
     {
-      "nom": "Blaisot, ministre de la santé publique",
+      "nom": "Blaisot",
       "references_pages": [
         651,
         654,

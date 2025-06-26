@@ -10,7 +10,11 @@
     },
     {
       "nom": "Bachelet (Alexandre)",
-      "references_pages": "<renvoi d'index>"
+      "references_pages": [
+        146,
+        148,
+        832
+      ]
     },
     {
       "nom": "Barthou (Louis), ministre de la guerre",
@@ -229,7 +233,8 @@
         376,
         379,
         406,
-        784
+        784,
+        1590
       ]
     },
     {
@@ -268,12 +273,15 @@
     },
     {
       "nom": "Bosc (Jean)",
-      "references_pages": "<renvoi d'index>"
+      "references_pages": [
+        1417
+      ]
     },
     {
       "nom": "Bourdeaux (Henry)",
       "references_pages": [
         799,
+        738,
         1066
       ]
     }
