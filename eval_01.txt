@@ -1,11 +1,3 @@
-# Evaluation sortie structurée
-
-{explanation files blabla}
-
-## Stats
-
-```
-# First try
 Matching (index T -> index P):
 T[0] ⇄ P[0]  — Babin-Chevaye ⇄ Babin-Chevaye
 T[1] ⇄ P[1]  — Bachelet Alexandre ⇄ Bachelet (Alexandre)
@@ -36,4 +28,3 @@ Recall: 1.0000
 F1: 1.0000
 Average Matching Quality: 0.9569
 Overall Matching Quality: 0.9852
-``` 
