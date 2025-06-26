@@ -11,13 +11,13 @@
           ]
         },
         {
-          "description_action": "Parle: disouss. dun projet de loi portant fixation du budget général de l'exercice 1931-1932 (Instruction publique)",
+          "description_action": "Parle: discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Instruction publique)",
           "references_pages": [
             582
           ]
         },
         {
-          "description_action": "Parle: disouss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Postes, télégraphes et téléphones)",
+          "description_action": "Parle: discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Postes, télégraphes et téléphones)",
           "references_pages": [
             719
           ]
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "description_action": "Parle: disouss. d'un projet de loi relatif à l'exploitation des lignes de l'aéropostale",
+          "description_action": "Parle: discuss. d'un projet de loi relatif à l'exploitation des lignes de l'aéropostale",
           "references_pages": [
             394,
             396,
@@ -49,7 +49,7 @@
           ]
         },
         {
-          "description_action": "Son amendement déposé au cours de la diseuss. d'un projet de loi portant ouverture et annulation de crédits sur l'exercice 1930-1931 au titre du budget général et des budgets annexes",
+          "description_action": "Son amendement déposé au cours de la discuss. d'un projet de loi portant ouverture et annulation de crédits sur l'exercice 1930-1931 au titre du budget général et des budgets annexes",
           "references_pages": [
             1211
           ]
@@ -154,13 +154,13 @@
           ]
         },
         {
-          "description_action": "Parle à la suite du dépôt d'une interpellation relative aux mesures que le Gouvernement a envisa-gées pour enrayer le chômage et la baisse des salaires dans les mines",
+          "description_action": "Parle à la suite du dépôt d'une interpellation relative aux mesures que le Gouvernement a envisagées pour enrayer le chômage et la baisse des salaires dans les mines",
           "references_pages": [
             132
           ]
         },
         {
-          "description_action": "Discuss. d'une proposition de loi relative aux saisies. exécution",
+          "description_action": "Discuss. d'une proposition de loi relative aux saisies exécutoires",
           "references_pages": [
             172
           ]
@@ -304,7 +304,7 @@
       "prenom": "Victor",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Parle : discuss. d'un projet de loi concernant l'acte général d'arbitrage, en qualité de président de la commission des affaires étrangères",
+          "description_action": "Parle: discuss. d'un projet de loi concernant l'acte général d'arbitrage, en qualité de président de la commission des affaires étrangères",
           "references_pages": [
             229
           ]
@@ -453,7 +453,7 @@
     },
     {
       "nom_de_famille": "Bergeon",
-      "prenom": "Benoft-Charles",
+      "prenom": "Benoît-Charles",
       "actions_relatives_a_l_intervenant": [
         {
           "description_action": "Parle: discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Marine militaire)",
@@ -485,7 +485,7 @@
       "prenom": "Léon",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Parle : discuss. d'un projet de loi relatif au fonds national de chômage",
+          "description_action": "Parle: discuss. d'un projet de loi relatif au fonds national de chômage",
           "references_pages": [
             317
           ]
@@ -683,8 +683,7 @@
           "description_action": "Parle: discuss. d'une proposition de loi concernant la propriété commerciale",
           "references_pages": [
             344,
-            376,
-            379
+            376
           ]
         },
         {

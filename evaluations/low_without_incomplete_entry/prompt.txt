@@ -3,15 +3,15 @@
 <A SAVOIR> : Avant tout, sachez qu'il y a une entrée par personne et que, pour le contexte, les personnes mentionnées ont participé à l'activité du Sénat.
 Ce sont en général des sénateurs, des ministres, des sous-secrétaires, etc.
 
-<LES ENTRÉES> : Chaque entrée se compose : du NOM et parfois du PRÉNOM d'un intervenant; parfois de son rôle (ce n'est pas toujours précisé); d'une liste d'ACTIONS qu'il a effectuées ou qui le concernent.
+<LES ENTRÉES> : Chaque entrée se compose : du NOM et parfois du PRÉNOM d'un intervenant (str); parfois de son rôle (ce n'est pas toujours précisé); d'une liste d'ACTIONS qu'il a effectuées ou qui le concernent.
 
 <ACTION> : Chaque action concernant un intervenant est en général lié à un ou plusieurs numéros de page. Quand il y a une référence de page, vous pouvez être certain qu'il s'agit d'une référence d'une action concernant l'intervenant.
 
 <LE CAS DES RENVOIS D'INDEX> : Dans le cas où une entrée n'expose PAS des actions ou des faits et/ou des pages concernant un intervenant, mais une simple mention nominale, alors il s'agit d'un renvoi d'index. Dans ce cas, il faudra indiquer la référence du renvoi (str). Ces renvois sont en général des noms/prénoms d'intervenants. Ces renvois ne font donc pas référence à des pages, mais à d'autres entrées nominales.
 
-<VOICI DONC LES INFORMATIONS A EXTRAIRE> : Je veux donc que vous me donniez les noms (et les prénoms s'il y en a); ainsi que les numéros de pages relatives aux descriptions des actions ou interventions de chaque intervenant (OU, s'il n'y a pas d'action, juste dire qu'il s'agit d'un renvoi d'index ("<renvoi d'index>").
+<VOICI DONC LES INFORMATIONS A EXTRAIRE> : Je veux donc que vous me donniez les noms (et les prénoms s'il y en a); ainsi que les numéros de pages relatives aux descriptions des actions ou interventions de chaque intervenant -- List[int]-- OU, s'il n'y a pas d'action, juste dire qu'il s'agit d'un renvoi d'index ("<renvoi d'index>") -- (str).
 
-<NOTE> : Quand il n'y a aucun un renvoi d'index, adoptez cette syntaxe au niveau approprié :"references_pages": "<renvoi d'index>"
+<NOTE> : Quand il y a un renvoi d'index (un str), adopte cette syntaxe au niveau approprié :"references_pages": "<renvoi d'index>"
 
 <ATTENTION> : Le texte qui vous sera soumis peut être tronqué. Dans ce cas, il faut ignorer le texte incomplet et ne prendre en compte que les entrées complètes.
 

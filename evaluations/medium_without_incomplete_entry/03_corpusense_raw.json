@@ -5,20 +5,15 @@
       "prenom": "",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Est proclamé secrétaire du Sénat",
+          "description_action": "Est proclamé secrétaire du Sénat, p. 8.",
           "references_pages": [
             8
           ]
         },
         {
-          "description_action": "Parle: discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Instruction publique)",
+          "description_action": "Parle: discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Instruction publique), p. 582; (Postes, télégraphes et téléphones) p. 719.",
           "references_pages": [
-            582
-          ]
-        },
-        {
-          "description_action": "Parle: discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Postes, télégraphes et téléphones)",
-          "references_pages": [
+            582,
             719
           ]
         }
@@ -34,13 +29,13 @@
       "prenom": "Louis",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Son allocution à l'occasion du décès du maréchal Joffre",
+          "description_action": "Son allocution à l'occasion du décès du maréchal Joffre, p. 2.",
           "references_pages": [
             2
           ]
         },
         {
-          "description_action": "Parle: discuss. d'un projet de loi relatif à l'exploitation des lignes de l'aéropostale",
+          "description_action": "Parle: discuss. d'un projet de loi relatif à l'exploitation des lignes de l'aéropostale, p. 394, 396, 397, 399.",
           "references_pages": [
             394,
             396,
@@ -49,13 +44,13 @@
           ]
         },
         {
-          "description_action": "Son amendement déposé au cours de la discuss. d'un projet de loi portant ouverture et annulation de crédits sur l'exercice 1930-1931 au titre du budget général et des budgets annexes",
+          "description_action": "Son amendement déposé au cours de la discuss. d'un projet de loi portant ouverture et annulation de crédits sur l'exercice 1930-1931 au titre du budget général et des budgets annexes, p. 1211.",
           "references_pages": [
             1211
           ]
         },
         {
-          "description_action": "Parle: rectification au procès-verbal",
+          "description_action": "Parle: rectification au procès-verbal, p. 1237.",
           "references_pages": [
             1237
           ]
@@ -67,7 +62,7 @@
       "prenom": "Gaston",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Est admis",
+          "description_action": "Est admis, p. 1560.",
           "references_pages": [
             1560
           ]
@@ -79,31 +74,31 @@
       "prenom": "Jean",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Parle: discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Agriculture)",
+          "description_action": "Parle: discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Agriculture), p. 477.",
           "references_pages": [
             477
           ]
         },
         {
-          "description_action": "Demande à interpeller sur les mesures que compte prendre le Gouvernement pour prévenir les crises agricoles",
+          "description_action": "Demande à interpeller sur les mesures que compte prendre le Gouvernement pour prévenir les crises agricoles, notamment celles qui sévissent sur l'élevage national que préparent les importations massives de matières alimentaires, p. 1087.",
           "references_pages": [
             1087
           ]
         },
         {
-          "description_action": "Parle: fixation de la date de la discuss.",
+          "description_action": "Parle: fixation de la date de la discuss., p. 1130.",
           "references_pages": [
             1130
           ]
         },
         {
-          "description_action": "Développe son interpellation",
+          "description_action": "Développe son interpellation, p. 1287.",
           "references_pages": [
             1287
           ]
         },
         {
-          "description_action": "Parle: discuss. d'un projet de loi relatif à l'outillage national",
+          "description_action": "Parle: discuss. d'un projet de loi relatif à l'outillage national, p. 1667, 1674, 1708.",
           "references_pages": [
             1667,
             1674,
@@ -117,14 +112,14 @@
       "prenom": "Léonus",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Parle: discuss. d'un projet de loi relatif au crédit colonial",
+          "description_action": "Parle: discuss. d'un projet de loi relatif au crédit colonial, p. 146, 148.",
           "references_pages": [
             146,
             148
           ]
         },
         {
-          "description_action": "Dépose et lit son rapport sur un projet de loi désignant un nouveau lieu de déportation",
+          "description_action": "Dépose et lit son rapport sur un projet de loi désignant un nouveau lieu de déportation, p. 832.",
           "references_pages": [
             832
           ]
@@ -136,7 +131,7 @@
       "prenom": "",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Est admis",
+          "description_action": "Est admis, p. 966.",
           "references_pages": [
             966
           ]
@@ -148,43 +143,43 @@
       "prenom": "Léon",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Donne lecture d'une communication du Gouvernement",
+          "description_action": "Donne lecture d'une communication du Gouvernement, p. 35.",
           "references_pages": [
             35
           ]
         },
         {
-          "description_action": "Parle à la suite du dépôt d'une interpellation relative aux mesures que le Gouvernement a envisagées pour enrayer le chômage et la baisse des salaires dans les mines",
+          "description_action": "Parle à la suite du dépôt d'une interpellation relative aux mesures que le Gouvernement a envisagées pour enrayer le chômage et la baisse des salaires dans les mines, p. 132.",
           "references_pages": [
             132
           ]
         },
         {
-          "description_action": "Discuss. d'une proposition de loi relative aux saisies-exécution",
+          "description_action": "Discuss. d'une proposition de loi relative aux saisies-exécution, p. 172.",
           "references_pages": [
             172
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi relatif aux aliénés",
+          "description_action": "Discuss. d'un projet de loi relatif aux aliénés, p. 213.",
           "references_pages": [
             213
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi sur l'expropriation pour cause d'insalubrité",
+          "description_action": "Discuss. d'un projet de loi sur l'expropriation pour cause d'insalubrité, p. 270.",
           "references_pages": [
             270
           ]
         },
         {
-          "description_action": "Discuss. d'une proposition de loi modifiant certains articles du code du commerce et du code de procédure civile",
+          "description_action": "Discuss. d'une proposition de loi modifiant certains articles du code du commerce et du code de procédure civile, p. 272.",
           "references_pages": [
             272
           ]
         },
         {
-          "description_action": "Discuss. d'une proposition de loi relative à la propriété commerciale",
+          "description_action": "Discuss. d'une proposition de loi relative à la propriété commerciale, p. 326, 342, 344, 349, 358, 365, 372, 374, 415, 421, 422.",
           "references_pages": [
             326,
             342,
@@ -200,7 +195,7 @@
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Justice)",
+          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Justice), p. 451, 452, 453, 454, 455; (Légion d'honneur), p. 461, 462.",
           "references_pages": [
             451,
             452,
@@ -212,63 +207,63 @@
           ]
         },
         {
-          "description_action": "Discuss. d'une proposition de résolution à l'adresse de la république espagnole",
+          "description_action": "Discuss. d'une proposition de résolution à l'adresse de la république espagnole, p. 958.",
           "references_pages": [
             958
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi concernant les locataires commerciaux menacés d'expulsion",
+          "description_action": "Discuss. d'un projet de loi concernant les locataires commerciaux menacés d'expulsion, p. 982, 1285.",
           "references_pages": [
             982,
             1285
           ]
         },
         {
-          "description_action": "Donne lecture d'un message de M. Paul Doumer, Président de la République",
+          "description_action": "Donne lecture d'un message de M. Paul Doumer, Président de la République, p. 1053.",
           "references_pages": [
             1053
           ]
         },
         {
-          "description_action": "Associe le Gouvernement à une adresse de sympathie aux familles des victimes du naufrage du « Saint-Philibert »",
+          "description_action": "Associe le Gouvernement à une adresse de sympathie aux familles des victimes du naufrage du « Saint-Philibert », p. 1054.",
           "references_pages": [
             1054
           ]
         },
         {
-          "description_action": "Parle discuss. d'une proposition de loi réprimant la fraude en matière de divorce",
+          "description_action": "Parle discuss. d'une proposition de loi réprimant la fraude en matière de divorce, p. 1064.",
           "references_pages": [
             1064
           ]
         },
         {
-          "description_action": "Discuss. d'une proposition de loi relative à la réunion de justices de paix",
+          "description_action": "Discuss. d'une proposition de loi relative à la réunion de justices de paix, p. 1066.",
           "references_pages": [
             1066
           ]
         },
         {
-          "description_action": "Règlement de l'ordre du jour",
+          "description_action": "Règlement de l'ordre du jour, p. 1067, 1593.",
           "references_pages": [
             1067,
             1593
           ]
         },
         {
-          "description_action": "Associe le Gouvernement à l'hommage rendu à la mémoire de M. Armand Fallières, ancien Président de la République",
+          "description_action": "Associe le Gouvernement à l'hommage rendu à la mémoire de M. Armand Fallières, ancien Président de la République, p. 1091.",
           "references_pages": [
             1091
           ]
         },
         {
-          "description_action": "Parle: de la discuss. de plusieurs interpellations",
+          "description_action": "Parle: de la discuss. de plusieurs interpellations, p. 1389.",
           "references_pages": [
             1389
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi ayant pour objet de maintenir provisoirement dans les lieux les locataires commerciaux menacés d'expulsion",
+          "description_action": "Discuss. d'un projet de loi ayant pour objet de maintenir provisoirement dans les lieux les locataires commerciaux menacés d'expulsion, p. 1285, 1549, 1552, 1747.",
           "references_pages": [
             1285,
             1549,
@@ -277,14 +272,14 @@
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi relatif au tribunal des conflits",
+          "description_action": "Discuss. d'un projet de loi relatif au tribunal des conflits, p. 1586, 1590.",
           "references_pages": [
             1586,
             1590
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi portant amnistie",
+          "description_action": "Discuss. d'un projet de loi portant amnistie, p. 1762, 1765, 1766, 1772, 1773, 1775.",
           "references_pages": [
             1762,
             1765,
@@ -295,7 +290,7 @@
           ]
         },
         {
-          "description_action": "Discuss. d'une proposition de loi relative à la fermeture des fonds de commerce",
+          "description_action": "Discuss. d'une proposition de loi relative à la fermeture des fonds de commerce, p. 1816.",
           "references_pages": [
             1816
           ]
@@ -307,80 +302,60 @@
       "prenom": "Victor",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Parle: discuss. d'un projet de loi concernant l'acte général d'arbitrage, en qualité de président de la commission des affaires étrangères",
+          "description_action": "Parle: discuss. d'un projet de loi concernant l'acte général d'arbitrage, en qualité de président de la commission des affaires étrangères, p. 229.",
           "references_pages": [
             229
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi portant approbation du traité de conciliation et d'arbitrage obligatoire conclu entre le Portugal et la France, en qualité de président de la commission",
+          "description_action": "Discuss. d'un projet de loi portant approbation du traité de conciliation et d'arbitrage obligatoire conclu entre le Portugal et la France, en qualité de président de la commission, p. 233.",
           "references_pages": [
             233
           ]
         },
         {
-          "description_action": "Discuss. d'une proposition relative à la licence ès lettres",
+          "description_action": "Discuss. d'une proposition relative à la licence ès lettres, p. 286.",
           "references_pages": [
             286
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Instruction publique)",
+          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Instruction publique), p. 579, 581; (Intérieur), p. 628; (Enseignement technique), p. 643; (Affaires étrangères), en qualité de président de la commission, p. 685; (Beaux-Arts), en qualité de président de la commission de l'enseignement, p. 704.",
           "references_pages": [
             579,
-            581
-          ]
-        },
-        {
-          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Intérieur)",
-          "references_pages": [
-            628
-          ]
-        },
-        {
-          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Enseignement technique)",
-          "references_pages": [
-            643
-          ]
-        },
-        {
-          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Affaires étrangères)",
-          "references_pages": [
-            685
-          ]
-        },
-        {
-          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Beaux-Arts)",
-          "references_pages": [
+            581,
+            628,
+            643,
+            685,
             704
           ]
         },
         {
-          "description_action": "Dépose et lit son rapport sur un projet de loi relatif à un traité d'arbitrage avec l'Espagne",
+          "description_action": "Dépose et lit son rapport sur un projet de loi relatif à un traité d'arbitrage avec l'Espagne, p. 959.",
           "references_pages": [
             959
           ]
         },
         {
-          "description_action": "Parle: discuss. d'une proposition de loi sur l'exercice de la médecine",
+          "description_action": "Parle: discuss. d'une proposition de loi sur l'exercice de la médecine, en qualité de président de la commission des affaires étrangères, p. 1032.",
           "references_pages": [
             1032
           ]
         },
         {
-          "description_action": "Discuss. d'une interpellation sur la proposition américaine concernant les dettes de guerre",
+          "description_action": "Discuss. d'une interpellation sur la proposition américaine concernant les dettes de guerre, en qualité de président de la commission des affaires étrangères, p. 1220; son ordre du jour motivé, p. 1220.",
           "references_pages": [
             1220
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi relatif au programme naval",
+          "description_action": "Discuss. d'un projet de loi relatif au programme naval, p. 1267.",
           "references_pages": [
             1267
           ]
         },
         {
-          "description_action": "Son décès est annoncé",
+          "description_action": "Son décès est annoncé, p. 1415.",
           "references_pages": [
             1415
           ]
@@ -392,62 +367,62 @@
       "prenom": "Henry",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Parle: discuss. d'un projet de loi relatif au Crédit colonial",
+          "description_action": "Parle: discuss. d'un projet de loi relatif au Crédit colonial, p. 148.",
           "references_pages": [
             148
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Affaires étrangères)",
+          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Affaires étrangères), en qualité de rapporteur, p. 681.",
           "references_pages": [
             681
           ]
         },
         {
-          "description_action": "Donne lecture d'un avis de la commission des finances sur un projet de loi concernant les obligations consécutives au traité de Trianon",
+          "description_action": "Donne lecture d'un avis de la commission des finances sur un projet de loi concernant les obligations consécutives au traité de Trianon, p. 754.",
           "references_pages": [
             754
           ]
         },
         {
-          "description_action": "Dépose et lit son rapport sur un projet de loi relatif à la célébration du cinquantenaire du traité du Bardo",
+          "description_action": "Dépose et lit son rapport sur un projet de loi relatif à la célébration du cinquantenaire du traité du Bardo, p. 865.",
           "references_pages": [
             865
           ]
         },
         {
-          "description_action": "Dépose et lit son rapport sur un projet de loi relatif au monument du maréchal Douglas Haig",
+          "description_action": "Dépose et lit son rapport sur un projet de loi relatif au monument du maréchal Douglas Haig, p. 1010.",
           "references_pages": [
             1010
           ]
         },
         {
-          "description_action": "Parle: discuss. d'un projet de loi autorisant la Réunion, la Martinique, la Guadeloupe et la Guyane à emprunter",
+          "description_action": "Parle: discuss. d'un projet de loi autorisant la Réunion, la Martinique, la Guadeloupe et la Guyane à emprunter, p. 1012.",
           "references_pages": [
             1012
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi ratifiant des conventions entre l'Etat et la Compagnie française des pétroles",
+          "description_action": "Discuss. d'un projet de loi ratifiant des conventions entre l'Etat et la Compagnie française des pétroles, en qualité de rapporteur de la commission des affaires étrangères, p. 1243, 1249.",
           "references_pages": [
             1243,
             1249
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi relatif à la viticulture et au commerce des vins",
+          "description_action": "Discuss. d'un projet de loi relatif à la viticulture et au commerce des vins, p. 1363.",
           "references_pages": [
             1363
           ]
         },
         {
-          "description_action": "Dépose et lit son rapport sur un projet de loi relatif à la construction de l'hôtel diplomatique de Washington",
+          "description_action": "Dépose et lit son rapport sur un projet de loi relatif à la construction de l'hôtel diplomatique de Washington, p. 1372.",
           "references_pages": [
             1372
           ]
         },
         {
-          "description_action": "Parle: discuss. d'un projet de loi ouvrant des crédits pour l'achat d'immeubles diplomatiques",
+          "description_action": "Parle: discuss. d'un projet de loi ouvrant des crédits pour l'achat d'immeubles diplomatiques en qualité de rapporteur, p. 1491.",
           "references_pages": [
             1491
           ]
@@ -459,7 +434,7 @@
       "prenom": "Benoît-Charles",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Parle: discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Marine militaire)",
+          "description_action": "Parle: discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Marine militaire), p. 517, 520, 521, 522, 523; son amendement, p. 520.",
           "references_pages": [
             517,
             520,
@@ -469,13 +444,13 @@
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi relatif à la sauvegarde de la vie humaine en mer",
+          "description_action": "Discuss. d'un projet de loi relatif à la sauvegarde de la vie humaine en mer, en qualité de rapporteur, p. 1517.",
           "references_pages": [
             1517
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi relatif à la Poulticulture nationale",
+          "description_action": "Discuss. d'un projet de loi relatif à Poultillage national, p. 1695, 1696; son amendement, p. 1695.",
           "references_pages": [
             1695,
             1696
@@ -488,38 +463,28 @@
       "prenom": "Léon",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Parle: discuss. d'un projet de loi relatif au fonds national de chômage",
+          "description_action": "Parle: discuss. d'un projet de loi relatif au fonds national de chômage, p. 317.",
           "references_pages": [
             317
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Marine marchande)",
+          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Marine marchande), p. 508; (Pensions), p. 603, 896; (Intérieur), p. 616.",
           "references_pages": [
-            508
-          ]
-        },
-        {
-          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Pensions)",
-          "references_pages": [
+            508,
             603,
-            896
-          ]
-        },
-        {
-          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Intérieur)",
-          "references_pages": [
+            896,
             616
           ]
         },
         {
-          "description_action": "Discuss. de deux interpellations sur la situation économique",
+          "description_action": "Discuss. de deux interpellations = sur la situation économique, p. 1099.",
           "references_pages": [
             1099
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi portant amnistie",
+          "description_action": "Discuss. d'un projet de loi portant amnistie, p. 1764.",
           "references_pages": [
             1764
           ]
@@ -531,7 +496,7 @@
       "prenom": "",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Parle: discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Santé publique)",
+          "description_action": "Parle: discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Santé publique), p. 651, 654, 656, 658, 662.",
           "references_pages": [
             651,
             654,
@@ -541,7 +506,7 @@
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi relatif à l'outillage national",
+          "description_action": "Discuss. d'un projet de loi relatif à l'outillage national, p. 1658, 1660, 1661, 1662, 1663, 1665.",
           "references_pages": [
             1658,
             1660,
@@ -558,89 +523,69 @@
       "prenom": "comte Louis de",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Parle: discuss. d'un projet de loi autorisant les gouvernements généraux de l'Afrique occidentale, de l'Indochine et de Madagascar, les commissariats de la République française au Togo et au Cameroun à contracter des emprunts",
+          "description_action": "Parle: discuss. d'un projet de loi autorisant les gouvernements généraux de l'Afrique occidentale, de l'Indochine et de Madagascar, les commissariats de la République française au Togo et au Cameroun à contracter des emprunts, p. 72.",
           "references_pages": [
             72
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi relatif à l'exploitation des lignes de l'aéropostale",
+          "description_action": "Discuss. d'un projet de loi relatif à l'exploitation des lignes de l'aéropostale, p. 402.",
           "references_pages": [
             402
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Travail)",
+          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Travail), p. 569; (Instruction publique), p. 593, 594; son amendement, p. 593; (Intérieur), p. 622; (Beaux-Arts), p. 709; (Pensions), p. 901.",
           "references_pages": [
-            569
-          ]
-        },
-        {
-          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Instruction publique)",
-          "references_pages": [
+            569,
             593,
-            594
-          ]
-        },
-        {
-          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Intérieur)",
-          "references_pages": [
-            622
-          ]
-        },
-        {
-          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Beaux-Arts)",
-          "references_pages": [
-            709
-          ]
-        },
-        {
-          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Pensions)",
-          "references_pages": [
+            594,
+            622,
+            709,
             901
           ]
         },
         {
-          "description_action": "Discuss. d'une proposition de résolution à l'adresse de la république espagnole",
+          "description_action": "Discuss. d'une proposition de résolution à l'adresse de la république espagnole, p. 958.",
           "references_pages": [
             958
           ]
         },
         {
-          "description_action": "Discuss. d'une proposition de résolution modifiant les contingents de la Légion d'honneur au bénéfice du ministère de l'Instruction publique",
+          "description_action": "Discuss. d'une proposition de résolution modifiant les contingents de la Légion d'honneur au bénéfice du ministère de l'Instruction publique, p. 1062.",
           "references_pages": [
             1062
           ]
         },
         {
-          "description_action": "Discuss. d'une proposition de résolution relative aux prix spéciaux à accorder à des instituteurs et institutrices ruraux",
+          "description_action": "Discuss. d'une proposition de résolution relative aux prix spéciaux à accorder à des instituteurs et institutrices ruraux, p. 1151.",
           "references_pages": [
             1151
           ]
         },
         {
-          "description_action": "Discuss. d'une interpellation sur la proposition américaine concernant les dettes de guerre",
+          "description_action": "Discuss. d'une interpellation sur la proposition américaine concernant les dettes de guerre, p. 1217, 1221.",
           "references_pages": [
             1217,
             1221
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi relatif au programme naval",
+          "description_action": "Discuss. d'un projet de loi relatif au programme naval, p. 1268, 1273.",
           "references_pages": [
             1268,
             1273
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi relatif à la viticulture et au commerce des vins",
+          "description_action": "Discuss. d'un projet de loi relatif à la viticulture et au commerce des vins, p. 1355, 1361.",
           "references_pages": [
             1355,
             1361
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi relatif à l'outillage national",
+          "description_action": "Discuss. d'un projet de loi relatif à l'outillage national, p. 1695.",
           "references_pages": [
             1695
           ]
@@ -652,33 +597,32 @@
       "prenom": "",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Prend place au bureau en qualité de secrétaire d'âge",
+          "description_action": "Prend place au bureau en qualité de secrétaire d'âge, p. 1.",
           "references_pages": [
             1
           ]
         },
         {
-          "description_action": "Parle: discuss. d'une proposition de loi concernant la propriété commerciale",
+          "description_action": "Parle: discuss. d'une proposition de loi concernant la propriété commerciale, p. 344, 376, 379; ses amendements, p. 344, 376.",
           "references_pages": [
             344,
-            376,
-            379
+            376
           ]
         },
         {
-          "description_action": "Son amendement déposé au cours de la discuss. d'un projet de loi modifiant les frais de justice dans les départements recouvrés",
+          "description_action": "Son amendement déposé au cours de la discuss. d'un projet de loi modifiant les frais de justice dans les départements recouvrés, p. 406.",
           "references_pages": [
             406
           ]
         },
         {
-          "description_action": "Parle: discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Loi de finances)",
+          "description_action": "Parle: discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Loi de finances), p. 784; son amendement, p. 784.",
           "references_pages": [
             784
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi relatif au tribunal des conflits",
+          "description_action": "Discuss. d'un projet de loi relatif au tribunal des conflits, p. 1590.",
           "references_pages": [
             1590
           ]
@@ -690,7 +634,7 @@
       "prenom": "Maurice",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Dépose et lit son rapport sur un projet de loi concernant les règlements des obligations consécutives au traité de Trianon",
+          "description_action": "Dépose et lit son rapport sur un projet de loi concernant les règlements des obligations consécutives au traité de Trianon, p. 754.",
           "references_pages": [
             754
           ]
@@ -702,7 +646,7 @@
       "prenom": "",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Est admis",
+          "description_action": "Est admis, p. 1417.",
           "references_pages": [
             1417
           ]
@@ -714,13 +658,13 @@
       "prenom": "Charles",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Parle: discuss. d'un projet de loi relatif aux réparations des dommages causés par les calamités publiques",
+          "description_action": "Parle: discuss. d'un projet de loi relatif aux réparations des dommages causés par les calamités publiques, p. 460.",
           "references_pages": [
             460
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Loi de finances)",
+          "description_action": "Discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Loi de finances), p. 738, 809, 863; son amendement, p. 738.",
           "references_pages": [
             738,
             809,
@@ -728,38 +672,38 @@
           ]
         },
         {
-          "description_action": "Discuss. d'une interpellation sur la crise de l'élevage national",
+          "description_action": "Discuss. d'une interpellation sur la crise de l'élevage national, p. 1292.",
           "references_pages": [
             1292
           ]
         },
         {
-          "description_action": "Discuss. d'une proposition de résolution relative aux produits forestiers",
+          "description_action": "Discuss. d'une proposition de résolution relative aux produits forestiers, p. 1330.",
           "references_pages": [
             1330
           ]
         },
         {
-          "description_action": "Dépose et lit son rapport sur un projet de loi relatif au commerce de la chicorée",
+          "description_action": "Dépose et lit son rapport sur un projet de loi relatif au commerce de la chicorée, p. 1333.",
           "references_pages": [
             1333
           ]
         },
         {
-          "description_action": "Parle: discuss. d'un projet de loi relatif à la viticulture et au commerce des vins",
+          "description_action": "Parle: discuss. d'un projet de loi relatif à la viticulture et au commerce des vins, p. 1362.",
           "references_pages": [
             1362
           ]
         },
         {
-          "description_action": "Discuss. d'une interpellation relative aux marchés de traverses passés par les grands réseaux de chemins de fer",
+          "description_action": "Discuss. d'une interpellation relative aux marchés de traverses passés par les grands réseaux de chemins de fer, p. 1631, 1732.",
           "references_pages": [
             1631,
             1732
           ]
         },
         {
-          "description_action": "Discuss. d'un projet de loi relatif à la Poulticulture nationale",
+          "description_action": "Discuss. d'un projet de loi relatif à Poultillage national, p. 1678.",
           "references_pages": [
             1678
           ]
@@ -771,7 +715,7 @@
       "prenom": "Antoine",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Est admis",
+          "description_action": "Est admis, p. 1418.",
           "references_pages": [
             1418
           ]
@@ -788,7 +732,7 @@
       "prenom": "Raymond",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Son amendement déposé au cours de la discussion d'une proposition de loi relative aux unions de coopératives",
+          "description_action": "Son amendement déposé au cours de la discussion d'une proposition de loi relative aux unions de coopératives, p. 112.",
           "references_pages": [
             112
           ]
@@ -800,13 +744,14 @@
       "prenom": "Henry",
       "actions_relatives_a_l_intervenant": [
         {
-          "description_action": "Parle: discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Loi de finances)",
+          "description_action": "Parle: discuss. d'un projet de loi portant fixation du budget général de l'exercice 1931-1932 (Loi de finances), p. 799; son amendement, p. 738.",
           "references_pages": [
-            799
+            799,
+            738
           ]
         },
         {
-          "description_action": "Règlement de l'ordre du jour",
+          "description_action": "Règlement de l'ordre du jour, p. 1066.",
           "references_pages": [
             1066
           ]

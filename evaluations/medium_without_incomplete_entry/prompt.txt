@@ -9,9 +9,9 @@ Ce sont en général des sénateurs, des ministres, des sous-secrétaires, etc.
 
 <LE CAS DES RENVOIS D'INDEX> : Dans le cas où une entrée n'expose PAS des actions ou des faits et/ou des pages concernant un intervenant, mais une simple mention nominale, alors il s'agit d'un renvoi d'index. Dans ce cas, il faudra indiquer la référence du renvoi (str). Ces renvois sont en général des noms/prénoms d'intervenants. Ces renvois ne font donc pas référence à des pages, mais à d'autres entrées nominales.
 
-<VOICI DONC LES INFORMATIONS A EXTRAIRE> : Je veux donc que vous me donniez les noms (et les prénoms s'il y en a); la description des actions ou interventions relatives à l'intervenant (OU, s'il n'y en a pas, juste dire qu'il s'agit d'un renvoi d'index ("<renvoi d'index>"); ainsi que, pour chacune de ces interventions, leurs références de pages.
+<VOICI DONC LES INFORMATIONS A EXTRAIRE> : Je veux donc que vous me donniez les noms (et les prénoms s'il y en a) -- str --; la description des actions ou interventions relatives à l'intervenant (OU, s'il n'y en a pas, juste dire qu'il s'agit d'un renvoi d'index ("<renvoi d'index>") -- str --; ainsi que, pour chacune de ces interventions, leurs références de pages -- List[int].
 
-<NOTE> : Quant il n'y a un renvoi d'index, adopte cette syntaxe au niveau approprié :"actions_relatives_a_l_intervenant": "<renvoi d'index>"
+<NOTE> : Quand il y a un renvoi d'index, adopte cette syntaxe au niveau approprié :"actions_relatives_a_l_intervenant": "<renvoi d'index>"
 
 <ATTENTION> : Le texte qui vous sera soumis est peut-être tronqué. Dans ce cas, il faut ignorer le texte incomplet et ne prendre en compte que les entrées complètes. Pour rappel, une entrée commence par un nom (voire un prénom).
 
