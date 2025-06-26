@@ -111,10 +111,10 @@ class Matcher:
         }
 
 if __name__ == "__main__":
-    with open("json/truth.json") as f:
+    with open("gt/low_vt.json") as f:
         truth_file = json.load(f)
 
-    with open("json/predicted.json") as f:
+    with open("predictions/low_without_incomplete_entry/01_vt.json") as f:
         predicted_file = json.load(f)
 
     truth = truth_file["listes_des_intervenants"]

@@ -55,7 +55,7 @@ def main():
     os.makedirs(output_dir, exist_ok=True)
     # output_path = os.path.join(output_dir, f'structured{v}.json')
 
-    with open(f"evaluations/low_without_incomplete_entry/{v}.json", 'w', encoding='utf-8') as f:
+    with open(f"predictions/low_without_incomplete_entry/{v}.json", 'w', encoding='utf-8') as f:
         json.dump(entry_list.model_dump(), f, ensure_ascii=False, indent=2)
     print(entries.choices[0].message.content)
     return "Success ! \n \n \n"
