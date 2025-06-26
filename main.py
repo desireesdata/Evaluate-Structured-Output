@@ -36,7 +36,7 @@ class Entry:
 
     def distance_to(self, other: 'Entry') -> float:
         """Return distance between him and an another object"""
-        """NB : ==> average field-to-field distances """
+        """NB : ==> average field-to-field distances (Ratcliff/Obershelp)"""
         def field_distance(f1: str, f2: str) -> float:
             return 1 - SequenceMatcher(None, f1, f2).ratio()
 
@@ -74,16 +74,17 @@ class Entry:
                 total += dist
                 count += 1
         return total / count if count else 1.0
-
     
 class Matcher:
     def __init__(self, entries_a: List[Entry], entries_b: List[Entry]):
+        """A Matcher is comparator; he compares two sets of entry and produces a matrix"""
         self.entries_a = entries_a
         self.entries_b = entries_b
         self.cost_matrix = self.compute_cost_matrix()
         self.matches = self.match()
 
     def compute_cost_matrix(self) -> np.ndarray:
+        """A faire : paramètre pour choisir sa distance"""
         n, m = len(self.entries_a), len(self.entries_b)
         cost_matrix = np.zeros((n, m))
 
@@ -95,6 +96,7 @@ class Matcher:
         return cost_matrix
 
     def match(self) -> List[Tuple[int, int]]:
+        """A faire : paramètre pour choisir la méthode d'assignement"""
         row_ind, col_ind = linear_sum_assignment(self.cost_matrix)
         return list(zip(row_ind, col_ind))
 
@@ -139,7 +141,7 @@ class Matcher:
         }
 
 if __name__ == "__main__":
-    v = "01_vt"
+    v = "03_corpusense_raw"
     with open("gt/low_vt.json") as f:
         truth_file = json.load(f)
 
@@ -158,6 +160,11 @@ if __name__ == "__main__":
     print("Matching (index T -> index P):")
     for i, j in matcher.matches:
         print(f"T[{i}] ⇄ P[{j}]  — {truth_entries[i].get()['nom']} ⇄ {predicted_entries[j].get()['nom']}")
+
+    # for i, j in matcher.matches:
+    #     t = truth_entries[i].get()
+    #     p = predicted_entries[j].get()
+    #     print(f"T[{i}] ⇄ P[{j}] — nom: {t['nom']} ⇄ {p['nom']} | pages: {t['references_pages']} ⇄ {p['references_pages']}")
 
     print("Matching stats:")
     for k, v in stats.items():

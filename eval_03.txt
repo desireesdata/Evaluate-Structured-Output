@@ -1,0 +1,28 @@
+Matching (index T -> index P):
+T[0] ⇄ P[0]  — Babin-Chevaye ⇄ Babin-Chevaye
+T[1] ⇄ P[1]  — Bachelet Alexandre ⇄ Bachelet (Alexandre)
+T[3] ⇄ P[2]  — Barthou (Louis) ⇄ Barthou (Louis)
+T[4] ⇄ P[3]  — Bazile (Gaston) ⇄ Bazile (Gaston)
+T[5] ⇄ P[4]  — Beaumont (Jean) ⇄ Beaumont
+T[6] ⇄ P[5]  — Bénard (Léonus) ⇄ Bénard (Léon)
+T[7] ⇄ P[6]  — Bender ⇄ Bender
+T[8] ⇄ P[7]  — Bérard (Léon) ⇄ Bérard (Léon)
+T[10] ⇄ P[8]  — Bérenger (Henry) ⇄ Bérenger (Henry)
+T[11] ⇄ P[9]  — Bergeon (Benoît-Charles) ⇄ Bergeon (Benoît-Charles)
+T[12] ⇄ P[10]  — Betoulle (Léon) ⇄ Betoulle (Léon)
+T[13] ⇄ P[19]  — Blaignan (Raymond) ⇄ Blaignan (Raymond)
+T[14] ⇄ P[11]  — Blaisot ⇄ Blaisot
+T[15] ⇄ P[12]  — Blois (comte Louis de) ⇄ Blois (comte Louis de)
+T[16] ⇄ P[13]  — Boivin-Champeaux ⇄ Boivin-Champeaux
+T[17] ⇄ P[14]  — Bompard (Maurice) ⇄ Bompard (Maurice)
+T[18] ⇄ P[15]  — Bon ⇄ Bon
+T[19] ⇄ P[16]  — Borgeot (Charles) ⇄ Borgeot (Charles)
+T[20] ⇄ P[17]  — Borrel (Antoine) ⇄ Borrel (Antoine)
+T[21] ⇄ P[18]  — Bosc (Jean) ⇄ Bosc (Jean)
+T[22] ⇄ P[20]  — Bourdeaux (Henry) ⇄ Bordeaux (Henry)
+Matching stats:
+Precision: 1.0000
+Recall: 0.9130
+F1: 0.9545
+Average Matching Quality: 0.9543
+Overall Matching Quality: 0.9545
