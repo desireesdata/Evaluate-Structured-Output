@@ -11,7 +11,7 @@ Ce sont en général des sénateurs, des ministres, des sous-secrétaires, etc.
 
 <VOICI DONC LES INFORMATIONS A EXTRAIRE> : Je veux donc que vous me donniez les noms (et les prénoms s'il y en a); ainsi que les numéros de pages relatives aux descriptions des actions ou interventions de chaque intervenant (OU, s'il n'y a pas d'action, juste dire qu'il s'agit d'un renvoi d'index ("<renvoi d'index>").
 
-<NOTE> : Quand il n'y a un renvoi d'index, adopte cette syntaxe au niveau approprié :"actions_relatives_a_l_intervenant": "<renvoi d'index>"
+<NOTE> : Quand il n'y a aucun un renvoi d'index, adoptez cette syntaxe au niveau approprié :"references_pages": "<renvoi d'index>"
 
 <ATTENTION> : Le texte qui vous sera soumis peut être tronqué. Dans ce cas, il faut ignorer le texte incomplet et ne prendre en compte que les entrées complètes.
 

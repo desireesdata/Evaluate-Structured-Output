@@ -10,14 +10,15 @@
         4537,
         1646,
         1707,
-        1708
+        1708,
+        8,
+        582,
+        719
       ]
     },
     {
       "nom": "Bachelet (Alexandre)",
-      "references_pages": [
-        1560
-      ]
+      "references_pages": "<renvoi d'index>"
     },
     {
       "nom": "Barthou (Louis)",
@@ -261,20 +262,17 @@
     },
     {
       "nom": "Bosc (Jean)",
-      "references_pages": [
-        1418
-      ]
+      "references_pages": "<renvoi d'index>"
     },
     {
       "nom": "Blaignan (Raymond)",
-      "references_pages": [
-        1418
-      ]
+      "references_pages": "<renvoi d'index>"
     },
     {
-      "nom": "Bourdeaux (Henry)",
+      "nom": "Bordeaux (Henry)",
       "references_pages": [
         799,
+        738,
         1066
       ]
     }
