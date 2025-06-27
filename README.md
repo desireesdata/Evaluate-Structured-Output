@@ -9,6 +9,8 @@ Exemple :
 ```bash
 python main.py -i "gt/low_vt.json" "predictions/low_without_incomplete_entry/*.json" -o "low_granularity_without_incomplete_entry"
 
+# This one don't work (not yet)
+python main.py -i "gt/medium_vt.json" "predictions/medium_with_incomplete_entry/*.json" -o "evaluations/medium_granularity_with_incomplete_entry"
 ```
 
 ## Stats

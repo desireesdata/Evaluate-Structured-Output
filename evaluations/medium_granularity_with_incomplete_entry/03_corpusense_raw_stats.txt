@@ -1,0 +1,14 @@
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/medium_vt.json
+Predicted: predictions/medium_with_incomplete_entry/03_corpusense_raw.json
+==================================================
+
+Precision: 1.0000
+Recall: 0.9565
+F1: 0.9778
+Average Matching Quality: 0.0000
+Overall Matching Quality: 0.0000
+
+Nombre d'entrées vérité terrain: 23
+Nombre d'entrées prédites: 22
+Nombre d'appariements: 22
