@@ -1,30 +1,30 @@
 Matching (index T -> index P):
-T[0] ⇄ P[0]  — Babin-Chevaye ⇄ Babin-Chevaye
-T[1] ⇄ P[1]  — Bachelet Alexandre ⇄ Bachelet (Alexandre)
-T[2] ⇄ P[2]  — Barthou (Louis) ⇄ Barthou (Louis), ministre de la guerre
-T[3] ⇄ P[3]  — Barthou (Louis) ⇄ Barthou (Louis)
-T[4] ⇄ P[4]  — Bazile (Gaston) ⇄ Bazile (Gaston)
-T[5] ⇄ P[5]  — Beaumont (Jean) ⇄ Beaumont (Jean)
-T[6] ⇄ P[6]  — Bénard (Léonus) ⇄ Bénard (Léonus)
-T[7] ⇄ P[7]  — Bender ⇄ Bender
-T[8] ⇄ P[8]  — Bérard (Léon) ⇄ Bérard (Léon), garde des sceaux, ministre de la justice
-T[9] ⇄ P[9]  — Bérard (Victor) ⇄ Bérard (Victor)
-T[10] ⇄ P[10]  — Bérenger (Henry) ⇄ Bérenger (Henry)
-T[11] ⇄ P[11]  — Bergeon (Benoît-Charles) ⇄ Bergeon (Benoît-Charles)
-T[12] ⇄ P[12]  — Betoulle (Léon) ⇄ Betoulle (Léon)
-T[13] ⇄ P[13]  — Blaignan (Raymond) ⇄ Blaignan (Raymond)
-T[14] ⇄ P[14]  — Blaisot ⇄ Blaisot, ministre de la santé publique
-T[15] ⇄ P[15]  — Blois (comte Louis de) ⇄ Blois (comte Louis de)
-T[16] ⇄ P[16]  — Boivin-Champeaux ⇄ Boivin-Champeaux
-T[17] ⇄ P[17]  — Bompard (Maurice) ⇄ Bompard (Maurice)
-T[18] ⇄ P[18]  — Bon ⇄ Bon
-T[19] ⇄ P[19]  — Borgeot (Charles) ⇄ Borgeot (Charles)
-T[20] ⇄ P[20]  — Borrel (Antoine) ⇄ Borrel (Antoine)
-T[21] ⇄ P[21]  — Bosc (Jean) ⇄ Bosc (Jean)
-T[22] ⇄ P[22]  — Bourdeaux (Henry) ⇄ Bourdeaux (Henry)
+T[0] ⇄ P[0] — nom: Babin-Chevaye ⇄ Babin-Chevaye | pages: [8, 582, 719] ⇄ [8, 582, 719]
+T[1] ⇄ P[1] — nom: Bachelet (Alexandre) ⇄ Bachelet (Alexandre) | pages: <renvoi d'index> ⇄ <renvoi d'index>
+T[2] ⇄ P[2] — nom: Barthou (Louis) ⇄ Barthou (Louis), ministre de la guerre | pages: [2] ⇄ [2]
+T[3] ⇄ P[3] — nom: Barthou (Louis) ⇄ Barthou (Louis) | pages: [394, 396, 397, 399, 1211, 1237] ⇄ [394, 396, 397, 399, 1211, 1237]
+T[4] ⇄ P[4] — nom: Bazile (Gaston) ⇄ Bazile (Gaston) | pages: [1560] ⇄ [1560]
+T[5] ⇄ P[5] — nom: Beaumont (Jean) ⇄ Beaumont (Jean) | pages: [477, 1087, 1130, 1287, 1667, 1674, 1708] ⇄ [477, 1087, 1130, 1287, 1667, 1674, 1708]
+T[6] ⇄ P[6] — nom: Bénard (Léonus) ⇄ Bénard (Léonus) | pages: [146, 148, 832] ⇄ [146, 148, 832]
+T[7] ⇄ P[7] — nom: Bender ⇄ Bender | pages: [966] ⇄ [966]
+T[8] ⇄ P[8] — nom: Bérard (Léon) ⇄ Bérard (Léon), garde des sceaux, ministre de la justice | pages: [35, 132, 172, 213, 270, 272, 326, 342, 344, 349, 358, 365, 372, 374, 415, 421, 422, 451, 452, 453, 454, 455, 461, 462, 958, 982, 1285, 1053, 1054, 1064, 1066, 1067, 1593, 1091, 1389, 1285, 1549, 1552, 1747, 1586, 1590, 1762, 1765, 1766, 1772, 1773, 1775, 1816] ⇄ [35, 132, 172, 213, 270, 272, 326, 342, 344, 349, 358, 365, 372, 374, 415, 421, 422, 451, 452, 453, 454, 455, 461, 462, 958, 982, 1053, 1054, 1064, 1066, 1067, 1091, 1389, 1285, 1549, 1552, 1747, 1586, 1590, 1762, 1765, 1766, 1772, 1773, 1775, 1816]
+T[9] ⇄ P[9] — nom: Bérard (Victor) ⇄ Bérard (Victor) | pages: [229, 233, 286, 579, 581, 628, 643, 685, 704, 959, 1032, 1220, 1267, 1415] ⇄ [229, 233, 286, 579, 581, 628, 643, 685, 704, 959, 1032, 1220, 1267, 1415]
+T[10] ⇄ P[10] — nom: Bérenger (Henry) ⇄ Bérenger (Henry) | pages: [148, 681, 754, 865, 1010, 1012, 1243, 1249, 1363, 1372, 1491] ⇄ [148, 681, 754, 865, 1010, 1012, 1243, 1249, 1363, 1372, 1491]
+T[11] ⇄ P[11] — nom: Bergeon (Benoît-Charles) ⇄ Bergeon (Benoît-Charles) | pages: [517, 520, 521, 522, 523, 1517, 1695, 1696] ⇄ [517, 520, 521, 522, 523, 1517, 1695, 1696]
+T[12] ⇄ P[12] — nom: Betoulle (Léon) ⇄ Betoulle (Léon) | pages: [317, 508, 603, 896, 616, 1099, 1764] ⇄ [317, 508, 603, 896, 616, 1099, 1764]
+T[13] ⇄ P[13] — nom: Blaignan (Raymond) ⇄ Blaignan (Raymond) | pages: [112, 448, 449, 539, 1225] ⇄ [112, 448, 449, 539, 1225]
+T[14] ⇄ P[14] — nom: Blaisot ⇄ Blaisot, ministre de la santé publique | pages: [651, 654, 656, 658, 662, 1658, 1660, 1661, 1662, 1663, 1665] ⇄ [651, 654, 656, 658, 662, 1658, 1660, 1661, 1662, 1663, 1665]
+T[15] ⇄ P[15] — nom: Blois (comte Louis de) ⇄ Blois (comte Louis de) | pages: [72, 402, 569, 593, 594, 622, 709, 901, 958, 1062, 1151, 1217, 1221, 1268, 1273, 1355, 1361, 1695] ⇄ [72, 402, 569, 593, 594, 622, 709, 901, 958, 1062, 1151, 1217, 1221, 1268, 1273, 1355, 1361, 1695]
+T[16] ⇄ P[16] — nom: Boivin-Champeaux ⇄ Boivin-Champeaux | pages: [1, 344, 376, 379, 406, 784, 1590] ⇄ [1, 344, 376, 379, 406, 784]
+T[17] ⇄ P[17] — nom: Bompard (Maurice) ⇄ Bompard (Maurice) | pages: [754] ⇄ [754]
+T[18] ⇄ P[18] — nom: Bon ⇄ Bon | pages: [1417] ⇄ [1417]
+T[19] ⇄ P[19] — nom: Borgeot (Charles) ⇄ Borgeot (Charles) | pages: [460, 738, 809, 863, 1292, 1330, 1333, 1362, 1631, 1732, 1678] ⇄ [460, 738, 809, 863, 1292, 1330, 1333, 1362, 1631, 1732, 1678]
+T[20] ⇄ P[20] — nom: Borrel (Antoine) ⇄ Borrel (Antoine) | pages: [1418] ⇄ [1418]
+T[21] ⇄ P[21] — nom: Bosc (Jean) ⇄ Bosc (Jean) | pages: <renvoi d'index> ⇄ <renvoi d'index>
+T[22] ⇄ P[22] — nom: Bourdeaux (Henry) ⇄ Bourdeaux (Henry) | pages: [799, 1066] ⇄ [799, 1066]
 Matching stats:
 Precision: 1.0000
 Recall: 1.0000
 F1: 1.0000
-Average Matching Quality: 0.9569
-Overall Matching Quality: 0.9852
+Average Matching Quality: 0.9592
+Overall Matching Quality: 0.9860

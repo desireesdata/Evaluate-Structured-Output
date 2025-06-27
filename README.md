@@ -2,6 +2,15 @@
 
 {explanation files blabla}
 
+## CLI
+
+Exemple :
+
+```bash
+python main.py -i "gt/low_vt.json" "predictions/low_without_incomplete_entry/*.json" -o "low_granularity_without_incomplete_entry"
+
+```
+
 ## Stats
 
 ```
@@ -37,3 +46,26 @@ F1: 1.0000
 Average Matching Quality: 0.9569
 Overall Matching Quality: 0.9852
 ``` 
+
+Utilisation :
+
+  #### Générer des statistiques
+  python main.py -i "truth.json" "predicted.json" -o "stats.txt"
+
+  #### Avec distance Levenshtein
+  python main.py -i "truth.json" "predicted.json" -d "levenshtein" -o "stats.txt"
+
+  #### Exporter les appariements en CSV  
+  python main.py -i "truth.json" "predicted.json" -m -o "matches.csv"
+
+  #### Ou automatiquement si l'extension de sortie est .csv
+  python main.py -i "truth.json" "predicted.json" -o "matches.csv"
+
+  Fonctionnalités :
+  - -i : 2 fichiers d'entrée (vérité terrain + prédictions)
+  - -o : fichier de sortie (.txt pour stats, .csv pour appariements)
+  - -d : choix distance (levenshtein ou ratcliff)
+  - -m : forcer export CSV des appariements
+
+  Les fichiers JSON sont automatiquement détectés (format avec listes_des_intervenants ou liste
+  directe).
