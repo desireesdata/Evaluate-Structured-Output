@@ -162,19 +162,63 @@ class Matcher:
                 writer.writerow([i, j, t.get('nom', ''), p.get('nom', ''), 
                                t.get('references_pages', ''), p.get('references_pages', ''), 
                                f"{distance:.4f}", f"{quality:.4f}"])
-
 def load_json_data(file_path: str) -> List[Entry]:
     with open(file_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
-    
+
     if isinstance(data, dict) and "listes_des_intervenants" in data:
         entries_data = data["listes_des_intervenants"]
     elif isinstance(data, list):
         entries_data = data
     else:
         raise ValueError(f"Format de fichier non reconnu dans {file_path}")
-    
-    return [Entry(e) for e in entries_data]
+
+    normalized_entries = []
+
+    for item in entries_data:
+        # FORMAT 1 : plat
+        if "nom" in item and "references_pages" in item:
+            normalized_entries.append(Entry(item))
+
+        # FORMAT 2 : structuré avec actions
+        elif "nom_de_famille" in item and "actions_relatives_a_l_intervenant" in item:
+            nom = item.get("nom_de_famille", "")
+            prenom = item.get("prenom", "")
+            full_name = f"{nom} ({prenom})" if prenom else nom
+
+            actions = item.get("actions_relatives_a_l_intervenant", [])
+            if isinstance(actions, str):  # Exemple : "<renvoi d'index>"
+                references = actions
+            else:
+                pages = []
+                for action_wrapper in actions:
+                    try:
+                        action = action_wrapper["action"]
+                        pages += action.get("references_page", [])
+                    except (KeyError, TypeError):
+                        continue
+                references = sorted(set(pages))
+
+            normalized_entries.append(Entry({
+                "nom": full_name,
+                "references_pages": references
+            }))
+
+        # FORMAT 3 : renvoi uniquement
+        elif "nom_entree_du_renvoi" in item and "nom_de_famille" in item:
+            nom = item.get("nom_de_famille", "")
+            prenom = item.get("prenom", "")
+            full_name = f"{nom} ({prenom})" if prenom else nom
+
+            normalized_entries.append(Entry({
+                "nom": full_name,
+                "references_pages": "<renvoi d'index>"
+            }))
+
+        else:
+            raise ValueError(f"Entrée au format non reconnu : {item}")
+
+    return normalized_entries
 
 def process_single_comparison(truth_file, predicted_file, output_dir, distance_method, base_name):
     """Traite une comparaison unique entre deux fichiers"""
