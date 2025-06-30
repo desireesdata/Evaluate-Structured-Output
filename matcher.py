@@ -7,7 +7,7 @@ from entry import Entry
 
 class Matcher:
     def __init__(self, entries_a: List[Entry], entries_b: List[Entry], distance_method: str = "ratcliff"):
-        """A Matcher is comparator; he compares two sets of entry and produces a matrix"""
+        """A Matcher is a comparator; he compares two sets of entry and produces a matrix"""
         self.entries_a = entries_a
         self.entries_b = entries_b
         self.distance_method = distance_method

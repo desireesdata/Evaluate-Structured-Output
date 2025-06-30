@@ -85,6 +85,10 @@ def process_single_comparison(truth_file: str, predicted_file: str, output_dir: 
     
     return stats, stats_file, matches_file
 
+def testing():
+    """Bac à sable"""
+    return 0
+
 def main():
     parser = setup_argument_parser()
     args = parser.parse_args()

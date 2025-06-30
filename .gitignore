@@ -6,6 +6,7 @@ __pycache__/
 tmp/
 
 .env
+.~lock.*
 
 
 # C extensions 
