@@ -246,6 +246,14 @@ On va se pencher sur une dimension plus qualitative : est-ce que malgré ce prot
 > à terminerAverage Matching Quality: 0.9568
 > Overall Matching Quality: 0.9553
 
+### Vue d'ensemble
+
+| Source                     | Precision | Recall | F1     | Average Matching Quality | Overall Matching Quality | Nombre d'entrées vérité terrain | Nombre d'entrées prédites | Nombre d'appariements |
+| -------------------------- | --------- | ------ | ------ | ------------------------ | ------------------------ | ------------------------------- | ------------------------- | --------------------- |
+| AVEC OCR REPUTE PARFAIT    | 1.0000    | 1.0000 | 1.0000 | 0.9592                   | 0.9860                   | 23                              | 23                        | 23                    |
+| AVEC CORPUSENSE (ZONING)   | 1.0000    | 1.0000 | 1.0000 | 0.9592                   | 0.9860                   | 23                              | 23                        | 23                    |
+| AVEC OCR BRUT (CORPUSENSE) | 1.0000    | 0.9130 | 0.9545 | 0.9568                   | 0.9553                   | 23                              | 21                        | 21                    |
+
 ## Limites
 
 Basée sur un appariement qui n'est pas la seule solution ! Peut être faudrait il dans certains cas, selon la question de recherche, un appariement avec moins de précision (99% de précision) mais un rappel de 100% pour avoir une vue d'ensemble plus globale d'un phénomène. Peut être faut il un autre appariement; d'autres distances, d'autres indicateurs pour des données agrégées que la moyenne.
