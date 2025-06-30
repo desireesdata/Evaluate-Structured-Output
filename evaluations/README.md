@@ -10,3 +10,9 @@ Les fichiers qui commencent par
 - 01 : le texte brut qui a servi pour la génération structurée a été corrigé à la main 
 - 02 : le texte brut qui a servi pour la génération structurée a été généré via corpusense avec les zones faites manuellement
 - 03 : le texte brut a été sorti via corpusense en prenant la page en entier (sortie la plus brutale)
+
+
+### Dataviz sommaires
+
+![](../dataviz/bar.png)
+![](../dataviz/radar.png)
