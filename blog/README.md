@@ -1,4 +1,4 @@
-> *[Dans le billet précédent](https://desireesdata.fr/deblais-et-remblais-textuels-sur-levaluation-des-llms-pour-des-taches-dindexation-documentaire-avec-le-transport-optimal-et-la-sortie-structuree-1-2/), j'ai établi les problématiques de l'évaluation de la sortie structurée pour des tâches de type indexation. Mais beaucoup de questions restaient en suspens, à commencer par l'analyse au niveau de la structure des objets et la métrique à utiliser. Dans cette partie -- la dernière ? -- il s'agira donc d'exposer des résultats avec des métriques "classiques" et deux autres, issues et adaptée du travail de deux chercheurs à l'EPITA, qui établissent la qualité des appariements.*
+> 
 
 ## Mesurer pour savoir, savoir ce qu'il faut mesurer (et mesurer ce que l'on tient à savoir)
 
@@ -243,7 +243,8 @@ On va se pencher sur une dimension plus qualitative : est-ce que malgré ce prot
 | Sortie structurée via l’outil Mezanno              | 0.9923                   | 0.9826                   |
 | Sortie structurée via l’OCR brut                   | 0.9568                   | 0.9553                   |
 
-> à terminer
+> à terminerAverage Matching Quality: 0.9568
+> Overall Matching Quality: 0.9553
 
 ## Limites
 
