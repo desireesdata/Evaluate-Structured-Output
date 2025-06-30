@@ -258,11 +258,12 @@ On va se pencher sur une dimension plus qualitative : est-ce que malgré ce prot
 
 > En gardant tout (résultat quasi-identique):
 
-| Source                     | Precision | Recall | F1     | Average Matching Quality | Overall Matching Quality | Nombre d'entrées vérité terrain | Nombre d'entrées prédites | Nombre d'appariements |
-| -------------------------- | --------- | ------ | ------ | ------------------------ | ------------------------ | ------------------------------- | ------------------------- | --------------------- |
-| OCR REPUTE PARFAIT         | 1.0000    | 1.0000 | 1.0000 | 0.9592                   | 0.9860                   | 23                              | 23                        | 23                    |
-| CORPUSENSE ZONES MANUELLES | 1.0000    | 0.9565 | 0.9778 | 0.9923                   | 0.9826                   | 23                              | 22                        | 22                    |
-| OCR BRUT                   | 1.0000    | 0.9565 | 0.9778 | 0.9471                   | 0.9673                   | 23                              | 22                        | 22                    |
+| Source | Precision | Recall | F1 | Average Matching Quality | Overall Matching Quality | Nombre d'entrées vérité terrain | Nombre d'entrées prédites | Nombre d'appariements |
+|-------|-----------|--------|----|--------------------------|-------------------------|----------------------------------|----------------------------|----------------------|
+| OCR REPUTE PARFAIT | 1.0000 | 1.0000 | 1.0000 | 0.9592 | 0.9860 | 23 | 23 | 23 |
+| CORPUSENSE ZONES MANUELLES | 1.0000 | 0.9565 | 0.9778 | 0.9923 | 0.9826 | 23 | 22 | 22 |
+| OCR BRUT | 1.0000 | 0.9565 | 0.9778 | 0.9471 | 0.9673 | 23 | 22 | 22 |
+| OCR BRUITE ARTIFICIELLEMENT | 1.0000 | 0.9130 | 0.9545 | 0.9246 | 0.9444 | 23 | 21 | 21 |
 
 ![](img/entree_tronquee.png)
 

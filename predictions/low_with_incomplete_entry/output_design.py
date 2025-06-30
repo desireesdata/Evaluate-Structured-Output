@@ -15,7 +15,7 @@ from pydantic import BaseModel, Field
 model = "ministral-8b-latest"
 client = Mistral(api_key=api_key)
 
-v = "01_vt"
+v = "05_noisy"
 # Read prompt from the same directory
 prompt_path = os.path.join(os.path.dirname(__file__), "prompt.txt")
 prompt = get_text_from_file(prompt_path, False)
@@ -45,7 +45,7 @@ def main():
             },
         ],
         response_format=IntervenantAuSenat,
-        max_tokens=len(texte)*2,
+        max_tokens=len(texte)*3,
         temperature=0
     )
     entries_dict = json.loads(entries.choices[0].message.content)
@@ -55,7 +55,7 @@ def main():
     os.makedirs(output_dir, exist_ok=True)
     # output_path = os.path.join(output_dir, f'structured{v}.json')
 
-    with open(f"predictions/low_with_incomplete_entry/{v}___test.json", 'w', encoding='utf-8') as f:
+    with open(f"predictions/low_with_incomplete_entry/{v}.json", 'w', encoding='utf-8') as f:
         json.dump(entry_list.model_dump(), f, ensure_ascii=False, indent=2)
     print(entries.choices[0].message.content)
     return "Success ! \n \n \n"

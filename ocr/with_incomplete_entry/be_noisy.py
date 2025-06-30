@@ -1,6 +1,6 @@
 import random
 
-def bruiter_texte(texte, probabilite_modification=0.03):
+def bruiter_texte(texte, probabilite_modification=0.04):
     """
     Bruite le texte en ajoutant, supprimant ou modifiant des caractères aléatoirement.
 
@@ -45,5 +45,5 @@ def bruiter_fichier(chemin_entree, chemin_sortie):
         fichier.write(contenu_bruite)
 
 chemin_entree = '01_vt.txt'
-chemin_sortie = '04_noisy.txt'
+chemin_sortie = '05_noisy.txt'
 bruiter_fichier(chemin_entree, chemin_sortie)
