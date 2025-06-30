@@ -264,6 +264,8 @@ On va se pencher sur une dimension plus qualitative : est-ce que malgré ce prot
 | CORPUSENSE ZONES MANUELLES | 1.0000    | 0.9565 | 0.9778 | 0.9923                   | 0.9826                   | 23                              | 22                        | 22                    |
 | OCR BRUT                   | 1.0000    | 0.9565 | 0.9778 | 0.9471                   | 0.9673                   | 23                              | 22                        | 22                    |
 
+![](img/entree_tronquee.png)
+
 ## Limites
 
 Basée sur un appariement qui n'est pas la seule solution ! Peut être faudrait il dans certains cas, selon la question de recherche, un appariement avec moins de précision (99% de précision) mais un rappel de 100% pour avoir une vue d'ensemble plus globale d'un phénomène. Peut être faut il un autre appariement; d'autres distances, d'autres indicateurs pour des données agrégées que la moyenne.
