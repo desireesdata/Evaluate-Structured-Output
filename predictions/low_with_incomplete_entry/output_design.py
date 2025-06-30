@@ -15,7 +15,7 @@ from pydantic import BaseModel, Field
 model = "ministral-8b-latest"
 client = Mistral(api_key=api_key)
 
-v = "03_corpusense_raw"
+v = "01_vt"
 # Read prompt from the same directory
 prompt_path = os.path.join(os.path.dirname(__file__), "prompt.txt")
 prompt = get_text_from_file(prompt_path, False)
@@ -55,7 +55,7 @@ def main():
     os.makedirs(output_dir, exist_ok=True)
     # output_path = os.path.join(output_dir, f'structured{v}.json')
 
-    with open(f"predictions/low_with_incomplete_entry/{v}.json", 'w', encoding='utf-8') as f:
+    with open(f"predictions/low_with_incomplete_entry/{v}___test.json", 'w', encoding='utf-8') as f:
         json.dump(entry_list.model_dump(), f, ensure_ascii=False, indent=2)
     print(entries.choices[0].message.content)
     return "Success ! \n \n \n"
