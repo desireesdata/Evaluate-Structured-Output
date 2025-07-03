@@ -1,0 +1,14 @@
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/page_04_low_vt.json
+Predicted: predictions/low_with_incomplete_entry/page_04_02.json
+==================================================
+
+Precision: 1.0000
+Recall: 1.0000
+F1: 1.0000
+Average Matching Quality: 0.9767
+Overall Matching Quality: 0.9921
+
+Nombre d'entrées vérité terrain: 19
+Nombre d'entrées prédites: 19
+Nombre d'appariements: 19

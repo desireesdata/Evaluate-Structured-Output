@@ -2,6 +2,12 @@
 
 {explanation files blabla}
 
+### Générer JSON structured output
+
+```
+python3 predictions/low_with_incomplete_entry/output_design.py 
+```
+
 ## CLI
 
 Exemple :
