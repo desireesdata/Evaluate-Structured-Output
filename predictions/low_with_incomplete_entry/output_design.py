@@ -15,7 +15,7 @@ from pydantic import BaseModel, Field
 model = "ministral-8b-latest"
 client = Mistral(api_key=api_key)
 
-v = "page_10_01"
+v = "page_10_03"
 # Read prompt from the same directory
 prompt_path = os.path.join(os.path.dirname(__file__), "prompt.txt")
 prompt = get_text_from_file(prompt_path, False)
