@@ -13,6 +13,9 @@ python3 predictions/low_with_incomplete_entry/output_design.py
 Exemple :
 
 ```bash
+python run_evaluations.py -p predictions/low_with_incomplete_entry -o evaluations_/low
+
+#caduque  :
 python main.py -i "gt/low_vt.json" "predictions/low_with_incomplete_entry/*.json" -o "evaluations_delete/low_granularity_with_incomplete_entry"
 
 # This one don't work (not yet)
