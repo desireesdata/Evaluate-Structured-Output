@@ -82,6 +82,9 @@ def extract_stats_from_file(stats_file):
     overall_quality_match = re.search(r'Overall Matching Quality: ([\d.]+)', content)
     imq_match = re.search(r'Integrated Matching Quality: ([\d.]+)', content)
     omq_imq_match = re.search(r'Overall Matching Quality \(IMQ-based\): ([\d.]+)', content)
+    irq_match = re.search(r'Integrated Recall Quality: ([\]d.]+)', content)
+    f1q_match = re.search(r'F1Q: ([\d.]+)', content)
+    wasserstein_match = re.search(r'Distance d\'entrées vérité terrain: ([\d.]+)', content)
     nb_truth_match = re.search(r'Nombre d\'entrées vérité terrain: (\d+)', content)
     nb_predicted_match = re.search(r'Nombre d\'entrées prédites: (\d+)', content)
     nb_matches_match = re.search(r'Nombre d\'appariements: (\d+)', content)
@@ -103,6 +106,12 @@ def extract_stats_from_file(stats_file):
         stats['imq'] = float(imq_match.group(1))
     if omq_imq_match:
         stats['omq_imq'] = float(omq_imq_match.group(1))
+    if irq_match:
+        stats['irq'] = float(irq_match.group(1))
+    if f1q_match:
+        stats['f1q'] = float(f1q_match.group(1))
+    if wasserstein_match:
+        stats['wasserstein'] = float(wasserstein_match.group(1))
     if nb_truth_match:
         stats['nb_truth'] = int(nb_truth_match.group(1))
     if nb_predicted_match:
@@ -181,6 +190,7 @@ def consolidate_results(output_dir):
             'Source', 'Precision', 'Recall', 'F1', 
             'Average Matching Quality', 'Overall Matching Quality',
             'Integrated Matching Quality', 'Overall Matching Quality (IMQ-based)',
+            'Integrated Recall Quality', 'F1Q', 'Distance de Wasserstein 1D',
             'Nombre d\'entrées vérité terrain', 'Nombre d\'entrées prédites', 
             'Nombre d\'appariements'
         ])
@@ -195,6 +205,9 @@ def consolidate_results(output_dir):
                 f"{stats.get('overall_quality', 0):.4f}",
                 f"{stats.get('imq', 0):.4f}",
                 f"{stats.get('omq_imq', 0):.4f}",
+                f"{stats.get('irq', 0):.4f}",
+                f"{stats.get('f1q', 0):.4f}",
+                f"{stats.get('wasserstein', 0):.4f}",
                 stats.get('nb_truth', 0),
                 stats.get('nb_predicted', 0),
                 stats.get('nb_matches', 0)

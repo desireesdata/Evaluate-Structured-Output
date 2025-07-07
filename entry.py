@@ -1,5 +1,6 @@
 from typing import Dict, List, Union, Literal
 from difflib import SequenceMatcher
+import difflib
 import jellyfish
 
 FieldName = Literal["nom", "references_pages"]
@@ -32,25 +33,11 @@ class Entry:
 
         return str(val)
 
+    def similarity_to(self, other: 'Entry') -> float:
+        return difflib.SequenceMatcher(None, self.nom, other.nom).ratio()
+
     def distance_to(self, other: 'Entry') -> float:
-        """Return distance between him and an another object"""
-        """NB : ==> average field-to-field distances (Ratcliff/Obershelp)"""
-        def field_distance(f1: str, f2: str) -> float:
-            return 1 - SequenceMatcher(None, f1, f2).ratio()
-
-        total = 0.0
-        count = 0
-
-        # Compare fields with the same label
-        for field in ["nom", "references_pages"]:
-            norm_self = self.normalize_field(field)
-            norm_other = other.normalize_field(field)
-
-            if norm_self or norm_other:
-                total += field_distance(norm_self, norm_other)
-                count += 1
-
-        return total / count if count else 1.0
+        return 1.0 - self.similarity_to(other)
     
     @staticmethod
     def normalized_levenshtein(s1: str, s2: str) -> float:

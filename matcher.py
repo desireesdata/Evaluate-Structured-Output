@@ -2,6 +2,7 @@ import csv
 from typing import Dict, List, Tuple
 import numpy as np
 from scipy.optimize import linear_sum_assignment
+from scipy.stats import wasserstein_distance as scipy_wasserstein
 from entry import Entry
 
 
@@ -62,30 +63,42 @@ class Matcher:
 
         return area / steps
     
-    # ajouté
+    # Modifié
     def compute_irq(self) -> float:
-        """IRQ. Integrated Recall Quality: qualité moyenne des appariements côté vérité terrain"""
         if not self.matches:
             return 0.0
-        total_quality = sum(1. - self.cost_matrix[i, j] for i, j in self.matches)
+
+        # Mapping des index vérité vers leur match (si existant)
+        matched_dict = {i: j for i, j in self.matches}
+        total_quality = 0.0
+
+        for i in range(len(self.entries_a)):
+            if i in matched_dict:
+                j = matched_dict[i]
+                total_quality += 1.0 - self.cost_matrix[i, j]
+            else:
+                total_quality += 0.0  # Non apparié = qualité nulle
+
         return total_quality / len(self.entries_a)
-    
-    # ajouté
+
+    # Modifié
     def compute_f1q(self) -> float:
-        """F1 qualitatif : moyenne harmonique entre IMQ et IRQ"""
-        imq = self.compute_imq()
+        imq = self.compute_integrated_matching_quality()
         irq = self.compute_irq()
 
         if imq + irq == 0:
             return 0.0
         return 2 * (imq * irq) / (imq + irq)
 
-    # ajouté
+    # Modifié
     def wasserstein_distance(self) -> float:
         if not self.matches:
             return 0.0
-        total_cost = sum(self.cost_matrix[i, j] for i, j in self.matches)
-        return total_cost / len(self.matches)
+        qualities = np.array([1.0 - self.cost_matrix[i, j] for i, j in self.matches])
+        # Si tu compares à une distribution idéale (par ex. qualité parfaite = 1 pour tous)
+        ideal = np.ones_like(qualities)
+        return scipy_wasserstein(qualities, ideal)
+
 
     def compute_overall_matching_quality_imq(self) -> float:
         """
@@ -131,14 +144,15 @@ class Matcher:
         omq_imq = self.compute_overall_matching_quality_imq()
         wasserstein = self.wasserstein_distance()
 
+        # tester les #ajouté
         return {
             **metrics,
             "Average Matching Quality": avg_quality,
             "Overall Matching Quality": overall_quality,
             "Integrated Matching Quality": imq,
-            "Integrated Recall Quality:": irq, #ajouté
+            "Integrated Recall Quality": irq, #ajouté
             "F1Q":  f1q, #ajouté
-            "Distance de Wasserstein 1D": wasserstein,
+            "Distance de Wasserstein 1D": wasserstein, #ajouté
             "Overall Matching Quality (IMQ-based)": omq_imq
         }
 
