@@ -42,6 +42,40 @@ class Matcher:
         f1 = 2 * precision * recall / (precision + recall) if (precision + recall) else 0.0
 
         return {"Precision": precision, "Recall": recall, "F1": f1}
+    
+    def compute_integrated_matching_quality(self, steps: int = 1000) -> float:
+        """
+        Approximation de l'aire sous la courbe qualité/couverture, c'est-à-dire
+        la proportion de matches ayant une qualité supérieure à un seuil donné, intégrée sur tous les seuils.
+        Renvoie une valeur entre 0 et 1 (plus elle est proche de 1, plus les matches sont nombreux et de bonne qualité).
+        """
+        if not self.matches:
+            return 0.0
+
+        qualities = np.array([1.0 - self.cost_matrix[i, j] for i, j in self.matches])
+        thresholds = np.linspace(0, 1, steps)
+        area = 0.0
+
+        for t in thresholds:
+            coverage = np.sum(qualities >= t) / len(self.entries_a)
+            area += coverage
+
+        return area / steps
+
+    def compute_overall_matching_quality_imq(self) -> float:
+        """
+        Version de l'OMQ (Overall Matching Quality) basée sur l'IMQ (Integrated Matching Quality),
+        qui remplace la précision pour tenir compte de la qualité de tous les appariements.
+        """
+        imq = self.compute_integrated_matching_quality()
+        recall = self.compute_precision_recall_f1()["Recall"]
+        avg_quality = self.compute_average_matching_quality()
+
+        denom = (imq * recall + imq * avg_quality + recall * avg_quality)
+        if denom == 0:
+            return 0.0
+        return 3 * (imq * recall * avg_quality) / denom
+
 
     def compute_average_matching_quality(self) -> float:
         if not self.matches:
@@ -65,11 +99,15 @@ class Matcher:
         metrics = self.compute_precision_recall_f1()
         avg_quality = self.compute_average_matching_quality()
         overall_quality = self.compute_overall_matching_quality()
+        imq = self.compute_integrated_matching_quality()
+        omq_imq = self.compute_overall_matching_quality_imq()
 
         return {
             **metrics,
             "Average Matching Quality": avg_quality,
-            "Overall Matching Quality": overall_quality
+            "Overall Matching Quality": overall_quality,
+            "Integrated Matching Quality": imq,
+            "Overall Matching Quality (IMQ-based)": omq_imq
         }
 
     def export_matches_to_csv(self, truth_entries: List[Entry], predicted_entries: List[Entry], output_file: str):
