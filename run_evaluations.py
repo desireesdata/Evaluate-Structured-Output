@@ -80,6 +80,8 @@ def extract_stats_from_file(stats_file):
     f1_match = re.search(r'F1: ([\d.]+)', content)
     avg_quality_match = re.search(r'Average Matching Quality: ([\d.]+)', content)
     overall_quality_match = re.search(r'Overall Matching Quality: ([\d.]+)', content)
+    imq_match = re.search(r'Integrated Matching Quality: ([\d.]+)', content)
+    omq_imq_match = re.search(r'Overall Matching Quality \(IMQ-based\): ([\d.]+)', content)
     nb_truth_match = re.search(r'Nombre d\'entrées vérité terrain: (\d+)', content)
     nb_predicted_match = re.search(r'Nombre d\'entrées prédites: (\d+)', content)
     nb_matches_match = re.search(r'Nombre d\'appariements: (\d+)', content)
@@ -97,6 +99,10 @@ def extract_stats_from_file(stats_file):
         stats['avg_quality'] = float(avg_quality_match.group(1))
     if overall_quality_match:
         stats['overall_quality'] = float(overall_quality_match.group(1))
+    if imq_match:
+        stats['imq'] = float(imq_match.group(1))
+    if omq_imq_match:
+        stats['omq_imq'] = float(omq_imq_match.group(1))
     if nb_truth_match:
         stats['nb_truth'] = int(nb_truth_match.group(1))
     if nb_predicted_match:
@@ -174,6 +180,7 @@ def consolidate_results(output_dir):
         writer.writerow([
             'Source', 'Precision', 'Recall', 'F1', 
             'Average Matching Quality', 'Overall Matching Quality',
+            'Integrated Matching Quality', 'Overall Matching Quality (IMQ-based)',
             'Nombre d\'entrées vérité terrain', 'Nombre d\'entrées prédites', 
             'Nombre d\'appariements'
         ])
@@ -186,6 +193,8 @@ def consolidate_results(output_dir):
                 f"{stats.get('f1', 0):.4f}",
                 f"{stats.get('avg_quality', 0):.4f}",
                 f"{stats.get('overall_quality', 0):.4f}",
+                f"{stats.get('imq', 0):.4f}",
+                f"{stats.get('omq_imq', 0):.4f}",
                 stats.get('nb_truth', 0),
                 stats.get('nb_predicted', 0),
                 stats.get('nb_matches', 0)
@@ -197,6 +206,7 @@ def consolidate_results(output_dir):
     print(f"  - {summary_csv_path}")
     
     return consolidated_txt_path, consolidated_csv_path, summary_csv_path
+
 
 def main():
     parser = setup_argument_parser()

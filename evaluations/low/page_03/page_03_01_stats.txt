@@ -8,6 +8,8 @@ Recall: 1.0000
 F1: 1.0000
 Average Matching Quality: 0.9441
 Overall Matching Quality: 0.9807
+Integrated Matching Quality: 0.9441
+Overall Matching Quality (IMQ-based): 0.9620
 
 Nombre d'entrées vérité terrain: 25
 Nombre d'entrées prédites: 25
