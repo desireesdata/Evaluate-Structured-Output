@@ -13,6 +13,9 @@ F1: 1.0000
 Average Matching Quality: 0.8997
 Overall Matching Quality: 0.9642
 Integrated Matching Quality: 0.8996
+Integrated Recall Quality: 0.8997
+F1Q: 0.8996
+Distance de Wasserstein 1D: 0.1003
 Overall Matching Quality (IMQ-based): 0.9308
 
 Nombre d'entrées vérité terrain: 25
@@ -32,6 +35,9 @@ F1: 1.0000
 Average Matching Quality: 0.9404
 Overall Matching Quality: 0.9793
 Integrated Matching Quality: 0.9403
+Integrated Recall Quality: 0.9404
+F1Q: 0.9404
+Distance de Wasserstein 1D: 0.0596
 Overall Matching Quality (IMQ-based): 0.9594
 
 Nombre d'entrées vérité terrain: 25
@@ -51,6 +57,9 @@ F1: 1.0000
 Average Matching Quality: 0.9441
 Overall Matching Quality: 0.9807
 Integrated Matching Quality: 0.9441
+Integrated Recall Quality: 0.9441
+F1Q: 0.9441
+Distance de Wasserstein 1D: 0.0559
 Overall Matching Quality (IMQ-based): 0.9620
 
 Nombre d'entrées vérité terrain: 25
@@ -70,6 +79,9 @@ F1: 1.0000
 Average Matching Quality: 0.8778
 Overall Matching Quality: 0.9556
 Integrated Matching Quality: 0.8777
+Integrated Recall Quality: 0.8778
+F1Q: 0.8777
+Distance de Wasserstein 1D: 0.1222
 Overall Matching Quality (IMQ-based): 0.9150
 
 Nombre d'entrées vérité terrain: 23
@@ -89,6 +101,9 @@ F1: 1.0000
 Average Matching Quality: 0.8179
 Overall Matching Quality: 0.9309
 Integrated Matching Quality: 0.8177
+Integrated Recall Quality: 0.8179
+F1Q: 0.8178
+Distance de Wasserstein 1D: 0.1821
 Overall Matching Quality (IMQ-based): 0.8707
 
 Nombre d'entrées vérité terrain: 23
@@ -108,6 +123,9 @@ F1: 1.0000
 Average Matching Quality: 0.8828
 Overall Matching Quality: 0.9576
 Integrated Matching Quality: 0.8827
+Integrated Recall Quality: 0.8828
+F1Q: 0.8827
+Distance de Wasserstein 1D: 0.1172
 Overall Matching Quality (IMQ-based): 0.9187
 
 Nombre d'entrées vérité terrain: 23
@@ -127,6 +145,9 @@ F1: 1.0000
 Average Matching Quality: 0.9616
 Overall Matching Quality: 0.9869
 Integrated Matching Quality: 0.9615
+Integrated Recall Quality: 0.9616
+F1Q: 0.9615
+Distance de Wasserstein 1D: 0.0384
 Overall Matching Quality (IMQ-based): 0.9740
 
 Nombre d'entrées vérité terrain: 19
@@ -146,6 +167,9 @@ F1: 1.0000
 Average Matching Quality: 0.9796
 Overall Matching Quality: 0.9931
 Integrated Matching Quality: 0.9795
+Integrated Recall Quality: 0.9796
+F1Q: 0.9795
+Distance de Wasserstein 1D: 0.0204
 Overall Matching Quality (IMQ-based): 0.9863
 
 Nombre d'entrées vérité terrain: 19
@@ -165,6 +189,9 @@ F1: 1.0000
 Average Matching Quality: 0.9767
 Overall Matching Quality: 0.9921
 Integrated Matching Quality: 0.9766
+Integrated Recall Quality: 0.9767
+F1Q: 0.9766
+Distance de Wasserstein 1D: 0.0233
 Overall Matching Quality (IMQ-based): 0.9843
 
 Nombre d'entrées vérité terrain: 19
@@ -184,6 +211,9 @@ F1: 0.9545
 Average Matching Quality: 0.9928
 Overall Matching Quality: 0.9670
 Integrated Matching Quality: 0.9064
+Integrated Recall Quality: 0.9065
+F1Q: 0.9064
+Distance de Wasserstein 1D: 0.0072
 Overall Matching Quality (IMQ-based): 0.9358
 
 Nombre d'entrées vérité terrain: 23
@@ -203,6 +233,9 @@ F1: 1.0000
 Average Matching Quality: 0.9554
 Overall Matching Quality: 0.9847
 Integrated Matching Quality: 0.9553
+Integrated Recall Quality: 0.9554
+F1Q: 0.9553
+Distance de Wasserstein 1D: 0.0446
 Overall Matching Quality (IMQ-based): 0.9698
 
 Nombre d'entrées vérité terrain: 23
@@ -222,6 +255,9 @@ F1: 0.9778
 Average Matching Quality: 0.9540
 Overall Matching Quality: 0.9697
 Integrated Matching Quality: 0.9124
+Integrated Recall Quality: 0.9125
+F1Q: 0.9125
+Distance de Wasserstein 1D: 0.0460
 Overall Matching Quality (IMQ-based): 0.9406
 
 Nombre d'entrées vérité terrain: 23
@@ -241,6 +277,9 @@ F1: 1.0000
 Average Matching Quality: 0.8546
 Overall Matching Quality: 0.9463
 Integrated Matching Quality: 0.8544
+Integrated Recall Quality: 0.8546
+F1Q: 0.8545
+Distance de Wasserstein 1D: 0.1454
 Overall Matching Quality (IMQ-based): 0.8981
 
 Nombre d'entrées vérité terrain: 19
@@ -260,6 +299,9 @@ F1: 1.0000
 Average Matching Quality: 0.8659
 Overall Matching Quality: 0.9509
 Integrated Matching Quality: 0.8657
+Integrated Recall Quality: 0.8659
+F1Q: 0.8658
+Distance de Wasserstein 1D: 0.1341
 Overall Matching Quality (IMQ-based): 0.9063
 
 Nombre d'entrées vérité terrain: 19
@@ -279,6 +321,9 @@ F1: 1.0000
 Average Matching Quality: 0.8463
 Overall Matching Quality: 0.9429
 Integrated Matching Quality: 0.8461
+Integrated Recall Quality: 0.8463
+F1Q: 0.8462
+Distance de Wasserstein 1D: 0.1537
 Overall Matching Quality (IMQ-based): 0.8919
 
 Nombre d'entrées vérité terrain: 19

@@ -9,6 +9,9 @@ F1: 1.0000
 Average Matching Quality: 0.8179
 Overall Matching Quality: 0.9309
 Integrated Matching Quality: 0.8177
+Integrated Recall Quality: 0.8179
+F1Q: 0.8178
+Distance de Wasserstein 1D: 0.1821
 Overall Matching Quality (IMQ-based): 0.8707
 
 Nombre d'entrées vérité terrain: 23
