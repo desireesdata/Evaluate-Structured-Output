@@ -5,6 +5,10 @@ Average Matching Quality                 0.916640
 Overall Matching Quality                 0.966793
 Integrated Matching Quality              0.908000
 Overall Matching Quality (IMQ-based)     0.936247
+Integrated Recall Quality                0.908120
+F1Q                                      0.908040
+Distance de Wasserstein 1D               0.083360
 Nombre d'entrées vérité terrain         21.800000
 Nombre d'entrées prédites               21.600000
 Nombre d'appariements                   21.600000
+dtype: float64
