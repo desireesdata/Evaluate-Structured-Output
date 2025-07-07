@@ -71,17 +71,20 @@ page_05_03	1.0000	1.0000	1.0000	0.8463	0.9429	0.8461	0.8919	19	19	19
 
 ```
 
-#### Moyenne
+#### Moyennes
 
 | Metric | Value |
 |--------|-------|
 | Precision | 1.000000 |
-| **Recall** | 0.991300 |
+| Recall | 0.991300 |
 | F1 | 0.995487 |
-| **Average Matching Quality** | 0.916640 |
+| Average Matching Quality | 0.916640 |
 | Overall Matching Quality | 0.966793 |
-| **Integrated Matching Quality** | 0.908000 |
-| **Overall Matching Quality (IMQ-based)** | 0.936247 |
+| Integrated Matching Quality | 0.908000 |
+| Overall Matching Quality (IMQ-based) | 0.936247 |
+| Integrated Recall Quality | 0.908120 |
+| F1Q | 0.908040 |
+| Distance de Wasserstein 1D | 0.083360 |
 | Nombre d'entrées vérité terrain | 21.800000 |
 | Nombre d'entrées prédites | 21.600000 |
 | Nombre d'appariements | 21.600000 |
