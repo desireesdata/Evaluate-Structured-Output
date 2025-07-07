@@ -45,7 +45,7 @@ class Matcher:
     
     def compute_integrated_matching_quality(self, steps: int = 1000) -> float:
         """
-        Approximation de l'aire sous la courbe qualité/couverture, c'est-à-dire
+        IMQ. Approximation de l'aire sous la courbe qualité/couverture, c'est-à-dire
         la proportion de matches ayant une qualité supérieure à un seuil donné, intégrée sur tous les seuils.
         Renvoie une valeur entre 0 et 1 (plus elle est proche de 1, plus les matches sont nombreux et de bonne qualité).
         """
@@ -61,6 +61,31 @@ class Matcher:
             area += coverage
 
         return area / steps
+    
+    # ajouté
+    def compute_irq(self) -> float:
+        """IRQ. Integrated Recall Quality: qualité moyenne des appariements côté vérité terrain"""
+        if not self.matches:
+            return 0.0
+        total_quality = sum(1. - self.cost_matrix[i, j] for i, j in self.matches)
+        return total_quality / len(self.entries_a)
+    
+    # ajouté
+    def compute_f1q(self) -> float:
+        """F1 qualitatif : moyenne harmonique entre IMQ et IRQ"""
+        imq = self.compute_imq()
+        irq = self.compute_irq()
+
+        if imq + irq == 0:
+            return 0.0
+        return 2 * (imq * irq) / (imq + irq)
+
+    # ajouté
+    def wasserstein_distance(self) -> float:
+        if not self.matches:
+            return 0.0
+        total_cost = sum(self.cost_matrix[i, j] for i, j in self.matches)
+        return total_cost / len(self.matches)
 
     def compute_overall_matching_quality_imq(self) -> float:
         """
@@ -95,18 +120,25 @@ class Matcher:
             return 0.0
         return 3 * (precision * recall * avg_quality) / denom
 
+    # Modifié
     def compute_all_statistics(self) -> Dict[str, float]:
         metrics = self.compute_precision_recall_f1()
         avg_quality = self.compute_average_matching_quality()
         overall_quality = self.compute_overall_matching_quality()
         imq = self.compute_integrated_matching_quality()
+        irq = self.compute_irq()
+        f1q = self.compute_f1q()
         omq_imq = self.compute_overall_matching_quality_imq()
+        wasserstein = self.wasserstein_distance()
 
         return {
             **metrics,
             "Average Matching Quality": avg_quality,
             "Overall Matching Quality": overall_quality,
             "Integrated Matching Quality": imq,
+            "Integrated Recall Quality:": irq, #ajouté
+            "F1Q":  f1q, #ajouté
+            "Distance de Wasserstein 1D": wasserstein,
             "Overall Matching Quality (IMQ-based)": omq_imq
         }
 
