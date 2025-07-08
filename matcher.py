@@ -63,7 +63,6 @@ class Matcher:
 
         return area / steps
     
-    # Modifié
     def compute_irq(self) -> float:
         if not self.matches:
             return 0.0
@@ -81,7 +80,6 @@ class Matcher:
 
         return total_quality / len(self.entries_a)
 
-    # Modifié
     def compute_f1q(self) -> float:
         imq = self.compute_integrated_matching_quality()
         irq = self.compute_irq()
@@ -90,7 +88,6 @@ class Matcher:
             return 0.0
         return 2 * (imq * irq) / (imq + irq)
 
-    # Modifié
     def wasserstein_distance(self) -> float:
         if not self.matches:
             return 0.0
