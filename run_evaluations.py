@@ -10,7 +10,7 @@ import re
 def run_evaluation_command(gt_file, predictions_pattern, output_dir, distance_method):
     """Run the evaluation command for a specific ground truth and predictions pattern"""
     cmd = [
-        "python", "main.py",
+        "python3", "main.py",
         "-i", gt_file, predictions_pattern,
         "-o", output_dir,
         "-d", distance_method
