@@ -48,6 +48,14 @@ Utilisation :
   Les fichiers JSON sont automatiquement détectés (format avec listes_des_intervenants ou liste
   directe).
 
+Expérimentation
+
+  ```
+  python3 generate_cost_matrices.py -g gt/page_02_low_vt.json
+     -p predictions/low_with_incomplete_entry/page_02_01_vt.json
+     -o cost_matrices_output
+  ```
+
 ### Résultats
 
 ```
