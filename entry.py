@@ -34,7 +34,7 @@ class Entry:
         return str(val)
 
     def similarity_to(self, other: 'Entry') -> float:
-        return difflib.SequenceMatcher(None, self.nom, other.nom).ratio()
+        return difflib.SequenceMatcher(None, self.normalize_field("nom"), other.normalize_field("nom")).ratio()
 
     def distance_to(self, other: 'Entry') -> float:
         return 1.0 - self.similarity_to(other)

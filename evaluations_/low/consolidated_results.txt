@@ -1,3 +1,332 @@
 CONSOLIDATED EVALUATION RESULTS
 ==================================================
 
+=== page_03_03 ===
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/page_03_low_vt.json
+Predicted: predictions/low_with_incomplete_entry/page_03_03.json
+==================================================
+
+Precision: 1.0000
+Recall: 1.0000
+F1: 1.0000
+Average Matching Quality: 0.8881
+Overall Matching Quality: 0.9597
+Integrated Matching Quality: 0.8881
+Integrated Recall Quality: 0.8881
+F1Q: 0.8881
+Distance de Wasserstein 1D: 0.1119
+Overall Matching Quality (IMQ-based): 0.9225
+
+Nombre d'entrées vérité terrain: 25
+Nombre d'entrées prédites: 25
+Nombre d'appariements: 25
+
+
+=== page_03_02 ===
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/page_03_low_vt.json
+Predicted: predictions/low_with_incomplete_entry/page_03_02.json
+==================================================
+
+Precision: 1.0000
+Recall: 1.0000
+F1: 1.0000
+Average Matching Quality: 0.8881
+Overall Matching Quality: 0.9597
+Integrated Matching Quality: 0.8881
+Integrated Recall Quality: 0.8881
+F1Q: 0.8881
+Distance de Wasserstein 1D: 0.1119
+Overall Matching Quality (IMQ-based): 0.9225
+
+Nombre d'entrées vérité terrain: 25
+Nombre d'entrées prédites: 25
+Nombre d'appariements: 25
+
+
+=== page_03_01 ===
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/page_03_low_vt.json
+Predicted: predictions/low_with_incomplete_entry/page_03_01.json
+==================================================
+
+Precision: 1.0000
+Recall: 1.0000
+F1: 1.0000
+Average Matching Quality: 0.8904
+Overall Matching Quality: 0.9606
+Integrated Matching Quality: 0.8904
+Integrated Recall Quality: 0.8904
+F1Q: 0.8904
+Distance de Wasserstein 1D: 0.1096
+Overall Matching Quality (IMQ-based): 0.9242
+
+Nombre d'entrées vérité terrain: 25
+Nombre d'entrées prédites: 25
+Nombre d'appariements: 25
+
+
+=== page_10_02 ===
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/page_10_low_vt.json
+Predicted: predictions/low_with_incomplete_entry/page_10_02.json
+==================================================
+
+Precision: 1.0000
+Recall: 1.0000
+F1: 1.0000
+Average Matching Quality: 0.8019
+Overall Matching Quality: 0.9239
+Integrated Matching Quality: 0.8020
+Integrated Recall Quality: 0.8019
+F1Q: 0.8020
+Distance de Wasserstein 1D: 0.1981
+Overall Matching Quality (IMQ-based): 0.8587
+
+Nombre d'entrées vérité terrain: 23
+Nombre d'entrées prédites: 23
+Nombre d'appariements: 23
+
+
+=== page_10_03 ===
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/page_10_low_vt.json
+Predicted: predictions/low_with_incomplete_entry/page_10_03.json
+==================================================
+
+Precision: 1.0000
+Recall: 1.0000
+F1: 1.0000
+Average Matching Quality: 0.8019
+Overall Matching Quality: 0.9239
+Integrated Matching Quality: 0.8020
+Integrated Recall Quality: 0.8019
+F1Q: 0.8020
+Distance de Wasserstein 1D: 0.1981
+Overall Matching Quality (IMQ-based): 0.8587
+
+Nombre d'entrées vérité terrain: 23
+Nombre d'entrées prédites: 23
+Nombre d'appariements: 23
+
+
+=== page_10_01 ===
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/page_10_low_vt.json
+Predicted: predictions/low_with_incomplete_entry/page_10_01.json
+==================================================
+
+Precision: 1.0000
+Recall: 1.0000
+F1: 1.0000
+Average Matching Quality: 0.8053
+Overall Matching Quality: 0.9254
+Integrated Matching Quality: 0.8054
+Integrated Recall Quality: 0.8053
+F1Q: 0.8053
+Distance de Wasserstein 1D: 0.1947
+Overall Matching Quality (IMQ-based): 0.8612
+
+Nombre d'entrées vérité terrain: 23
+Nombre d'entrées prédites: 23
+Nombre d'appariements: 23
+
+
+=== page_04_03 ===
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/page_04_low_vt.json
+Predicted: predictions/low_with_incomplete_entry/page_04_03.json
+==================================================
+
+Precision: 1.0000
+Recall: 1.0000
+F1: 1.0000
+Average Matching Quality: 0.9542
+Overall Matching Quality: 0.9842
+Integrated Matching Quality: 0.9541
+Integrated Recall Quality: 0.9542
+F1Q: 0.9541
+Distance de Wasserstein 1D: 0.0458
+Overall Matching Quality (IMQ-based): 0.9690
+
+Nombre d'entrées vérité terrain: 19
+Nombre d'entrées prédites: 19
+Nombre d'appariements: 19
+
+
+=== page_04_01 ===
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/page_04_low_vt.json
+Predicted: predictions/low_with_incomplete_entry/page_04_01.json
+==================================================
+
+Precision: 1.0000
+Recall: 1.0000
+F1: 1.0000
+Average Matching Quality: 0.9641
+Overall Matching Quality: 0.9877
+Integrated Matching Quality: 0.9641
+Integrated Recall Quality: 0.9641
+F1Q: 0.9641
+Distance de Wasserstein 1D: 0.0359
+Overall Matching Quality (IMQ-based): 0.9758
+
+Nombre d'entrées vérité terrain: 19
+Nombre d'entrées prédites: 19
+Nombre d'appariements: 19
+
+
+=== page_04_02 ===
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/page_04_low_vt.json
+Predicted: predictions/low_with_incomplete_entry/page_04_02.json
+==================================================
+
+Precision: 1.0000
+Recall: 1.0000
+F1: 1.0000
+Average Matching Quality: 0.9598
+Overall Matching Quality: 0.9862
+Integrated Matching Quality: 0.9598
+Integrated Recall Quality: 0.9598
+F1Q: 0.9598
+Distance de Wasserstein 1D: 0.0402
+Overall Matching Quality (IMQ-based): 0.9729
+
+Nombre d'entrées vérité terrain: 19
+Nombre d'entrées prédites: 19
+Nombre d'appariements: 19
+
+
+=== page_02_02_corpusense_boxes ===
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/page_02_low_vt.json
+Predicted: predictions/low_with_incomplete_entry/page_02_02_corpusense_boxes.json
+==================================================
+
+Precision: 1.0000
+Recall: 0.9130
+F1: 0.9545
+Average Matching Quality: 0.9966
+Overall Matching Quality: 0.9682
+Integrated Matching Quality: 0.9099
+Integrated Recall Quality: 0.9099
+F1Q: 0.9099
+Distance de Wasserstein 1D: 0.0034
+Overall Matching Quality (IMQ-based): 0.9382
+
+Nombre d'entrées vérité terrain: 23
+Nombre d'entrées prédites: 21
+Nombre d'appariements: 21
+
+
+=== page_02_01_vt ===
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/page_02_low_vt.json
+Predicted: predictions/low_with_incomplete_entry/page_02_01_vt.json
+==================================================
+
+Precision: 1.0000
+Recall: 1.0000
+F1: 1.0000
+Average Matching Quality: 0.9243
+Overall Matching Quality: 0.9734
+Integrated Matching Quality: 0.9243
+Integrated Recall Quality: 0.9243
+F1Q: 0.9243
+Distance de Wasserstein 1D: 0.0757
+Overall Matching Quality (IMQ-based): 0.9482
+
+Nombre d'entrées vérité terrain: 23
+Nombre d'entrées prédites: 23
+Nombre d'appariements: 23
+
+
+=== page_02_03_corpusense_raw ===
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/page_02_low_vt.json
+Predicted: predictions/low_with_incomplete_entry/page_02_03_corpusense_raw.json
+==================================================
+
+Precision: 1.0000
+Recall: 0.9565
+F1: 0.9778
+Average Matching Quality: 0.9954
+Overall Matching Quality: 0.9836
+Integrated Matching Quality: 0.9520
+Integrated Recall Quality: 0.9521
+F1Q: 0.9521
+Distance de Wasserstein 1D: 0.0046
+Overall Matching Quality (IMQ-based): 0.9676
+
+Nombre d'entrées vérité terrain: 23
+Nombre d'entrées prédites: 22
+Nombre d'appariements: 22
+
+
+=== page_05_01 ===
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/page_05_low_vt.json
+Predicted: predictions/low_with_incomplete_entry/page_05_01.json
+==================================================
+
+Precision: 1.0000
+Recall: 1.0000
+F1: 1.0000
+Average Matching Quality: 0.8085
+Overall Matching Quality: 0.9268
+Integrated Matching Quality: 0.8085
+Integrated Recall Quality: 0.8085
+F1Q: 0.8085
+Distance de Wasserstein 1D: 0.1915
+Overall Matching Quality (IMQ-based): 0.8636
+
+Nombre d'entrées vérité terrain: 19
+Nombre d'entrées prédites: 19
+Nombre d'appariements: 19
+
+
+=== page_05_02 ===
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/page_05_low_vt.json
+Predicted: predictions/low_with_incomplete_entry/page_05_02.json
+==================================================
+
+Precision: 1.0000
+Recall: 1.0000
+F1: 1.0000
+Average Matching Quality: 0.8316
+Overall Matching Quality: 0.9367
+Integrated Matching Quality: 0.8315
+Integrated Recall Quality: 0.8316
+F1Q: 0.8315
+Distance de Wasserstein 1D: 0.1684
+Overall Matching Quality (IMQ-based): 0.8810
+
+Nombre d'entrées vérité terrain: 19
+Nombre d'entrées prédites: 19
+Nombre d'appariements: 19
+
+
+=== page_05_03 ===
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/page_05_low_vt.json
+Predicted: predictions/low_with_incomplete_entry/page_05_03.json
+==================================================
+
+Precision: 1.0000
+Recall: 1.0000
+F1: 1.0000
+Average Matching Quality: 0.8283
+Overall Matching Quality: 0.9354
+Integrated Matching Quality: 0.8283
+Integrated Recall Quality: 0.8283
+F1Q: 0.8283
+Distance de Wasserstein 1D: 0.1717
+Overall Matching Quality (IMQ-based): 0.8786
+
+Nombre d'entrées vérité terrain: 19
+Nombre d'entrées prédites: 19
+Nombre d'appariements: 19
+

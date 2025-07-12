@@ -1,0 +1,19 @@
+Statistiques d'appariement (Distance: ratcliff)
+Truth: gt/page_02_low_vt.json
+Predicted: predictions/low_with_incomplete_entry/page_02_02_corpusense_boxes.json
+==================================================
+
+Precision: 1.0000
+Recall: 0.9130
+F1: 0.9545
+Average Matching Quality: 0.9966
+Overall Matching Quality: 0.9682
+Integrated Matching Quality: 0.9099
+Integrated Recall Quality: 0.9099
+F1Q: 0.9099
+Distance de Wasserstein 1D: 0.0034
+Overall Matching Quality (IMQ-based): 0.9382
+
+Nombre d'entrées vérité terrain: 23
+Nombre d'entrées prédites: 21
+Nombre d'appariements: 21
