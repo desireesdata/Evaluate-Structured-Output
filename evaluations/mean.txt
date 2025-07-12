@@ -1,19 +1,18 @@
-Precision                                1.000000
-Recall                                   0.991300
-F1                                       0.995487
+Precision                                1.000000   biaisé
+Recall                                   0.991300   biaisé
+F1                                       0.995487   biaisé
 
-Average Matching Quality                 0.889233
-Overall Matching Quality                 0.955693
+Average Matching Quality                 0.889233   "précisionoïde"
+Overall Matching Quality                 0.955693   biaisé
 
-Overall Matching Quality (IMQ-based)     0.916180   "précisionoïde"
+Overall Matching Quality (IMQ-based)     0.916180    biasié
 Integrated Matching Quality              0.880567   "rappeloïde"
-Integrated Recall Quality                0.880567
+Integrated Recall Quality                0.880567   équivalent à Integrated Matching Quality
 
 F1Q                                      0.880567   "Fscoroïde"
 
-Distance de Wasserstein 1D               0.110767
+Distance de Wasserstein 1D               0.110767   expérimental
 
-Nombre d'entrées vérité terrain         21.800000
-Nombre d'entrées prédites               21.600000
-Nombre d'appariements                   21.600000
-dtype: float64
+Nombre d'entrées vérité terrain         21.800000   nombre moyen d'entrée par page
+Nombre d'entrées prédites               21.600000   """
+Nombre d'appariements                   21.600000   """
