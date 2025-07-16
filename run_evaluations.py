@@ -6,6 +6,7 @@ import argparse
 import sys
 import csv
 import re
+import pandas as pd
 
 
 def run_evaluation_command(gt_file, predictions_pattern, output_dir, distance_method):
@@ -41,6 +42,8 @@ def setup_argument_parser():
                        default='ratcliff', help='Méthode de calcul de distance')
     parser.add_argument('--pages', nargs='+', 
                        help='Pages spécifiques à traiter (ex: page_02 page_03)')
+    parser.add_argument('--export-latex', action='store_true',
+                       help='Exporte également le tableau résumé au format LaTeX')
     return parser
 
 def discover_page_mappings(predictions_dir, gt_dir):
@@ -135,7 +138,7 @@ def get_source_name(predicted_file):
     base_name = filename.replace('.json', '')
     return base_name
 
-def consolidate_results(output_dir):
+def consolidate_results(output_dir, export_latex=False):
     """Consolidate all evaluation results into summary files"""
     all_stats = []
     all_csv_content = []
@@ -179,46 +182,65 @@ def consolidate_results(output_dir):
         for i, content in enumerate(all_csv_content):
             lines = content.strip().split('\n')
             source_name = lines[0].replace('=== ', '').replace(' ===', '')
-            for line in lines[2:]:  # Skip header and source name
-                if line.strip():
-                    f.write(f"{source_name}\t{line}\n")
+            if len(lines) > 2:
+                for line in lines[2:]:  # Skip header and source name
+                    if line.strip():
+                        f.write(f"{source_name}\t{line}\n")
     
+    # Create and write summary table
+    if not all_stats:
+        print("\nAucune statistique à consolider.")
+        return None, None, None
+
+    headers = [
+        'Source', 'Precision', 'Recall', 'F1', 
+        'Average Matching Quality', 'Overall Matching Quality',
+        'Integrated Matching Quality', 'Overall Matching Quality (IMQ-based)',
+        'Integrated Recall Quality', 'F1Q', 'Distance de Wasserstein 1D',
+        'Nombre d\'entrées vérité terrain', 'Nombre d\'entrées prédites', 
+        'Nombre d\'appariements'
+    ]
+    
+    stats_keys = [
+        'source', 'precision', 'recall', 'f1', 
+        'avg_quality', 'overall_quality', 'imq', 'omq_imq', 
+        'irq', 'f1q', 'wasserstein', 'nb_truth', 
+        'nb_predicted', 'nb_matches'
+    ]
+
+    df = pd.DataFrame(all_stats)
+    # Reorder columns and fill missing values
+    df = df.reindex(columns=stats_keys)
+    df.columns = headers
+
     # Write summary table CSV
     summary_csv_path = os.path.join(output_dir, "summary_table.csv")
-    with open(summary_csv_path, 'w', encoding='utf-8') as f:
-        writer = csv.writer(f, delimiter='\t')
-        writer.writerow([
-            'Source', 'Precision', 'Recall', 'F1', 
-            'Average Matching Quality', 'Overall Matching Quality',
-            'Integrated Matching Quality', 'Overall Matching Quality (IMQ-based)',
-            'Integrated Recall Quality', 'F1Q', 'Distance de Wasserstein 1D',
-            'Nombre d\'entrées vérité terrain', 'Nombre d\'entrées prédites', 
-            'Nombre d\'appariements'
-        ])
-        
-        for stats in all_stats:
-            writer.writerow([
-                stats.get('source', 'Unknown'),
-                f"{stats.get('precision', 0):.4f}",
-                f"{stats.get('recall', 0):.4f}",
-                f"{stats.get('f1', 0):.4f}",
-                f"{stats.get('avg_quality', 0):.4f}",
-                f"{stats.get('overall_quality', 0):.4f}",
-                f"{stats.get('imq', 0):.4f}",
-                f"{stats.get('omq_imq', 0):.4f}",
-                f"{stats.get('irq', 0):.4f}",
-                f"{stats.get('f1q', 0):.4f}",
-                f"{stats.get('wasserstein', 0):.4f}",
-                stats.get('nb_truth', 0),
-                stats.get('nb_predicted', 0),
-                stats.get('nb_matches', 0)
-            ])
+    df.to_csv(summary_csv_path, sep='\t', index=False, float_format='%.4f')
     
     print(f"\nFichiers consolidés générés:")
     print(f"  - {consolidated_txt_path}")
     print(f"  - {consolidated_csv_path}")
     print(f"  - {summary_csv_path}")
     
+    # Export to LaTeX if requested
+    if export_latex:
+        summary_latex_path = os.path.join(output_dir, "summary_table.tex")
+        
+        df_latex = df.copy()
+        
+        # Escape underscores for LaTeX
+        df_latex.columns = [str(col).replace('_', '\\_') for col in df_latex.columns]
+        if 'Source' in df_latex.columns:
+            df_latex['Source'] = df_latex['Source'].astype(str).str.replace('_', '\\_', regex=False)
+
+        try:
+            latex_string = df_latex.to_latex(index=False, escape=False, float_format="%.4f")
+            with open(summary_latex_path, 'w', encoding='utf-8') as f:
+                f.write(latex_string)
+            print(f"  - {summary_latex_path}")
+        except Exception as e:
+            print(f"Erreur lors de la génération du fichier LaTeX: {e}")
+
     return consolidated_txt_path, consolidated_csv_path, summary_csv_path
 
 
@@ -280,7 +302,7 @@ def main():
         # Generate consolidated files
         if success_count > 0:
             print("\nGénération des fichiers consolidés...")
-            consolidate_results(args.output_dir)
+            consolidate_results(args.output_dir, args.export_latex)
         
     except Exception as e:
         print(f"Erreur: {e}", file=sys.stderr)
