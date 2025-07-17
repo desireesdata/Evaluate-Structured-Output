@@ -250,17 +250,28 @@ def consolidate_results(output_dir, export_latex=False):
 
         # Category-specific tables
         if 'category' in df.columns:
+            # Define columns for the special LaTeX tables as requested
+            latex_headers = [
+                'Source', 'Precision (biaisé)', 'Recall (biaisé)', 
+                'Integrated Matching Quality', "Nombre d'entrées vérité terrain", 
+                "Nombre d'entrées prédites", "Nombre d'appariements"
+            ]
+            latex_keys = [
+                'source', 'precision', 'recall', 'imq', 
+                'nb_truth', 'nb_predicted', 'nb_matches'
+            ]
+
             for category_code, group in df.groupby('category'):
                 if pd.isna(category_code):
                     continue
-                
-                df_category = group.drop(columns=['category'])
-                df_category.columns = headers
+
+                # Select and rename columns for the LaTeX output
+                df_latex_cat = group[latex_keys].copy()
+                df_latex_cat.columns = latex_headers
                 
                 summary_latex_path_cat = os.path.join(output_dir, f"summary_table_{category_code}.tex")
                 
-                df_latex_cat = df_category.copy()
-                df_latex_cat.columns = [str(col).replace('_', '\\_') for col in df_latex_cat.columns]
+                # Escape underscores in source for LaTeX
                 if 'Source' in df_latex_cat.columns:
                     df_latex_cat['Source'] = df_latex_cat['Source'].astype(str).str.replace('_', '\\_', regex=False)
 
