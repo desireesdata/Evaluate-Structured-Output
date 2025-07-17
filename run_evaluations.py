@@ -154,6 +154,14 @@ def consolidate_results(output_dir, export_latex=False):
         if stats:
             source_name = get_source_name(stats.get('predicted_file', ''))
             stats['source'] = source_name
+            
+            # Extract category from source name (e.g., 'page_02_01_vt' -> '01')
+            parts = source_name.split('_')
+            if len(parts) > 2 and parts[0] == 'page':
+                stats['category'] = parts[2]
+            else:
+                stats['category'] = None
+            
             all_stats.append(stats)
             
             # Read the full txt content
@@ -205,17 +213,18 @@ def consolidate_results(output_dir, export_latex=False):
         'source', 'precision', 'recall', 'f1', 
         'avg_quality', 'overall_quality', 'imq', 'omq_imq', 
         'irq', 'f1q', 'wasserstein', 'nb_truth', 
-        'nb_predicted', 'nb_matches'
+        'nb_predicted', 'nb_matches', 'category'
     ]
 
     df = pd.DataFrame(all_stats)
     # Reorder columns and fill missing values
     df = df.reindex(columns=stats_keys)
-    df.columns = headers
+    df_display = df.drop(columns=['category'])
+    df_display.columns = headers
 
     # Write summary table CSV
     summary_csv_path = os.path.join(output_dir, "summary_table.csv")
-    df.to_csv(summary_csv_path, sep='\t', index=False, float_format='%.4f')
+    df_display.to_csv(summary_csv_path, sep='\t', index=False, float_format='%.4f')
     
     print(f"\nFichiers consolidés générés:")
     print(f"  - {consolidated_txt_path}")
@@ -224,11 +233,9 @@ def consolidate_results(output_dir, export_latex=False):
     
     # Export to LaTeX if requested
     if export_latex:
+        # Main summary table
         summary_latex_path = os.path.join(output_dir, "summary_table.tex")
-        
-        df_latex = df.copy()
-        
-        # Escape underscores for LaTeX
+        df_latex = df_display.copy()
         df_latex.columns = [str(col).replace('_', '\\_') for col in df_latex.columns]
         if 'Source' in df_latex.columns:
             df_latex['Source'] = df_latex['Source'].astype(str).str.replace('_', '\\_', regex=False)
@@ -239,10 +246,33 @@ def consolidate_results(output_dir, export_latex=False):
                 f.write(latex_string)
             print(f"  - {summary_latex_path}")
         except Exception as e:
-            print(f"Erreur lors de la génération du fichier LaTeX: {e}")
+            print(f"Erreur lors de la génération du fichier LaTeX principal: {e}")
+
+        # Category-specific tables
+        if 'category' in df.columns:
+            for category_code, group in df.groupby('category'):
+                if pd.isna(category_code):
+                    continue
+                
+                df_category = group.drop(columns=['category'])
+                df_category.columns = headers
+                
+                summary_latex_path_cat = os.path.join(output_dir, f"summary_table_{category_code}.tex")
+                
+                df_latex_cat = df_category.copy()
+                df_latex_cat.columns = [str(col).replace('_', '\\_') for col in df_latex_cat.columns]
+                if 'Source' in df_latex_cat.columns:
+                    df_latex_cat['Source'] = df_latex_cat['Source'].astype(str).str.replace('_', '\\_', regex=False)
+
+                try:
+                    latex_string_cat = df_latex_cat.to_latex(index=False, escape=False, float_format="%.4f")
+                    with open(summary_latex_path_cat, 'w', encoding='utf-8') as f:
+                        f.write(latex_string_cat)
+                    print(f"  - {summary_latex_path_cat}")
+                except Exception as e:
+                    print(f"Erreur lors de la génération du fichier LaTeX pour la catégorie {category_code}: {e}")
 
     return consolidated_txt_path, consolidated_csv_path, summary_csv_path
-
 
 def main():
     parser = setup_argument_parser()
