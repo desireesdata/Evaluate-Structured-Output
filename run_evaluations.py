@@ -205,8 +205,8 @@ def consolidate_results(output_dir, export_latex=False):
         'Average Matching Quality', 'Overall Matching Quality',
         'Integrated Matching Quality', 'Overall Matching Quality (IMQ-based)',
         'Integrated Recall Quality', 'F1Q', 'Distance de Wasserstein 1D',
-        'Nombre d\'entrées vérité terrain', 'Nombre d\'entrées prédites', 
-        'Nombre d\'appariements'
+        "Nombre d'entrées vérité terrain", "Nombre d'entrées prédites", 
+        "Nombre d'appariements"
     ]
     
     stats_keys = [
@@ -265,15 +265,18 @@ def consolidate_results(output_dir, export_latex=False):
                 if pd.isna(category_code):
                     continue
 
+                # Add a numeric page number column for sorting
+                group.loc[:, 'page_num'] = group['source'].str.extract(r'page_(\d+)').astype(int)
+                group = group.sort_values('page_num')
+                
                 # Select and rename columns for the LaTeX output
                 df_latex_cat = group[latex_keys].copy()
                 df_latex_cat.columns = latex_headers
+                
+                # Simplify the source name
+                df_latex_cat.loc[:, 'Source'] = 'page ' + group['page_num'].astype(str).str.zfill(2)
 
                 summary_latex_path_cat = os.path.join(output_dir, f"summary_table_{category_code}.tex")
-
-                # Escape underscores in source for LaTeX
-                if 'Source' in df_latex_cat.columns:
-                    df_latex_cat['Source'] = df_latex_cat['Source'].astype(str).str.replace('_', '\\_', regex=False)
 
                 try:
                     latex_string_cat = df_latex_cat.to_latex(index=False, escape=False, float_format="%.4f")
