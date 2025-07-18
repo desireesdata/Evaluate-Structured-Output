@@ -59,3 +59,41 @@ class Entry:
                 total += dist
                 count += 1
         return total / count if count else 1.0
+
+    def iou_distance_on_pages(self, other: 'Entry') -> float:
+        """Calcule la distance entre les listes de pages en utilisant 1 - IoU."""
+        pages_a = self.data.get("references_pages", [])
+        pages_b = other.data.get("references_pages", [])
+
+        # S'assurer que les données sont des listes
+        if not isinstance(pages_a, list):
+            pages_a = []
+        if not isinstance(pages_b, list):
+            pages_b = []
+
+        set_a = set(pages_a)
+        set_b = set(pages_b)
+
+        intersection_size = len(set_a.intersection(set_b))
+        union_size = len(set_a.union(set_b))
+
+        if union_size == 0:
+            return 0.0  # Deux listes vides sont identiques
+
+        iou = intersection_size / union_size
+        return 1.0 - iou
+
+    def combined_distance_iou(self, other: 'Entry', name_weight: float = 0.5) -> float:
+        """
+        Calcule une distance combinée en pondérant la distance du nom (par défaut)
+        et la distance IoU des pages.
+        """
+        if not (0.0 <= name_weight <= 1.0):
+            raise ValueError("Le poids du nom (name_weight) doit être entre 0.0 et 1.0")
+
+        page_weight = 1.0 - name_weight
+
+        dist_name = self.distance_to(other)
+        dist_pages = self.iou_distance_on_pages(other)
+
+        return (name_weight * dist_name) + (page_weight * dist_pages)

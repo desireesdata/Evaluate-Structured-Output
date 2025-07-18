@@ -23,6 +23,8 @@ class Matcher:
             for j, entry_b in enumerate(self.entries_b):
                 if distance_method == "levenshtein":
                     cost_matrix[i, j] = entry_a.distance_to_levenshtein(entry_b)
+                elif distance_method == "iou_combined":
+                    cost_matrix[i, j] = entry_a.combined_distance_iou(entry_b)
                 else:
                     cost_matrix[i, j] = entry_a.distance_to(entry_b)
 
@@ -156,15 +158,41 @@ class Matcher:
     def export_matches_to_csv(self, truth_entries: List[Entry], predicted_entries: List[Entry], output_file: str):
         with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
             writer = csv.writer(csvfile, delimiter='\t')
-            writer.writerow(['Truth_Index', 'Predicted_Index', 'Truth_Nom', 'Predicted_Nom', 
-                           'Truth_Pages', 'Predicted_Pages', 'Distance', 'Quality'])
-            
+            writer.writerow(['Truth_Index', 'Predicted_Index', 'Truth_Nom', 'Predicted_Nom',
+                           'Truth_Pages', 'Predicted_Pages',
+                           'Ratcliff_Obershelp_Distance', 'IoU_Distance', 'Combined_Distance',
+                           'Ratcliff_Obershelp_Quality', 'IoU_Quality', 'Combined_Quality'])
+
             for i, j in self.matches:
-                t = truth_entries[i].get()
-                p = predicted_entries[j].get()
-                distance = self.cost_matrix[i, j]
-                quality = 1.0 - distance
+                truth_entry = truth_entries[i]
+                pred_entry = predicted_entries[j]
                 
-                writer.writerow([i, j, t.get('nom', ''), p.get('nom', ''), 
-                               t.get('references_pages', ''), p.get('references_pages', ''), 
-                               f"{distance:.4f}", f"{quality:.4f}"])
+                t = truth_entry.get()
+                p = pred_entry.get()
+
+                name_dist = truth_entry.distance_to(pred_entry)
+                iou_dist = truth_entry.iou_distance_on_pages(pred_entry)
+                combined_dist = self.cost_matrix[i, j]
+
+                writer.writerow([
+                    i, j, t.get('nom', ''), p.get('nom', ''),
+                    t.get('references_pages', ''), p.get('references_pages', ''),
+                    f"{name_dist:.4f}", f"{iou_dist:.4f}", f"{combined_dist:.4f}",
+                    f"{1.0 - name_dist:.4f}", f"{1.0 - iou_dist:.4f}", f"{1.0 - combined_dist:.4f}"
+                ])
+
+            # Ajout des faux négatifs (non appariés dans la vérité)
+            matched_truth_indices = {i for i, j in self.matches}
+            for i in range(len(truth_entries)):
+                if i not in matched_truth_indices:
+                    t = truth_entries[i].get()
+                    writer.writerow([i, '', t.get('nom', ''), '', t.get('references_pages', ''), '',
+                                   'FN', 'FN', 'FN', 'FN', 'FN', 'FN'])
+
+            # Ajout des faux positifs (non appariés dans la prédiction)
+            matched_pred_indices = {j for i, j in self.matches}
+            for j in range(len(predicted_entries)):
+                if j not in matched_pred_indices:
+                    p = predicted_entries[j].get()
+                    writer.writerow(['', j, '', p.get('nom', ''), '', p.get('references_pages', ''),
+                                   'FP', 'FP', 'FP', 'FP', 'FP', 'FP'])

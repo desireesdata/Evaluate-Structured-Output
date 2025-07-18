@@ -38,7 +38,7 @@ def setup_argument_parser():
                        help='Dossier contenant les fichiers de vérité terrain (défaut: gt)')
     parser.add_argument('-o', '--output-dir', required=True,
                        help='Dossier de sortie pour les évaluations')
-    parser.add_argument('-d', '--distance', choices=['levenshtein', 'ratcliff'], 
+    parser.add_argument('-d', '--distance', choices=['levenshtein', 'ratcliff', 'iou_combined'], 
                        default='ratcliff', help='Méthode de calcul de distance')
     parser.add_argument('--pages', nargs='+', 
                        help='Pages spécifiques à traiter (ex: page_02 page_03)')

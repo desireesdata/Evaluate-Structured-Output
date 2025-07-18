@@ -1,4 +1,4 @@
-Statistiques d'appariement (Distance: ratcliff)
+Statistiques d'appariement (Distance: iou_combined)
 Truth: gt/page_04_low_vt.json
 Predicted: predictions/low_with_incomplete_entry/page_04_03.json
 ==================================================
@@ -6,13 +6,13 @@ Predicted: predictions/low_with_incomplete_entry/page_04_03.json
 Precision: 1.0000
 Recall: 1.0000
 F1: 1.0000
-Average Matching Quality: 0.9542
-Overall Matching Quality: 0.9842
-Integrated Matching Quality: 0.9541
-Integrated Recall Quality: 0.9542
-F1Q: 0.9541
-Distance de Wasserstein 1D: 0.0458
-Overall Matching Quality (IMQ-based): 0.9690
+Average Matching Quality: 0.9592
+Overall Matching Quality: 0.9860
+Integrated Matching Quality: 0.9591
+Integrated Recall Quality: 0.9592
+F1Q: 0.9591
+Distance de Wasserstein 1D: 0.0408
+Overall Matching Quality (IMQ-based): 0.9724
 
 Nombre d'entrées vérité terrain: 19
 Nombre d'entrées prédites: 19

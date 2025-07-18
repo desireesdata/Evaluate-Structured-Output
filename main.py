@@ -120,7 +120,7 @@ def setup_argument_parser() -> argparse.ArgumentParser:
                        metavar=('TRUTH', 'PREDICTED'))
     parser.add_argument('-o', '--output', required=True, 
                        help='Dossier de sortie ou fichier de sortie')
-    parser.add_argument('-d', '--distance', choices=['levenshtein', 'ratcliff'], 
+    parser.add_argument('-d', '--distance', choices=['levenshtein', 'ratcliff', 'iou_combined'], 
                        default='ratcliff', help='Méthode de calcul de distance')
     parser.add_argument('-m', '--matches', action='store_true', 
                        help='Exporter les appariements en CSV')
