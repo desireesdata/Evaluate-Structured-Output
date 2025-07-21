@@ -17,6 +17,9 @@ tmp/
 # Distribution / packaging
 .Python
 build/
+blog/
+dataviz/
+test_topologie/
 develop-eggs/
 dist/
 downloads/
