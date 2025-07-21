@@ -26,7 +26,7 @@ texte = get_text_from_file(texte_path, False)
 
 class Intervenant(BaseModel):
     nom: str = Field(..., description="Nom (et prénom s'il existe) de l'intervenant")
-    references_pages: Union[List[int], str] = Field(..., description="Liste des numéros de page où l'intervenant est référencé ou sinon <renvoi d'index>")
+    references_pages: Union[List[int], str] = Field(..., description="Liste des numéros de page où l'intervenant est référencé ou sinon <index cross-reference>")
 
 class IntervenantAuSenat(BaseModel):
     listes_des_intervenants: List[Intervenant] = Field(..., description="Liste de tous les intervenants avec leurs références de pages respectives")

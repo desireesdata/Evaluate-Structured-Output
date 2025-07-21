@@ -5,9 +5,9 @@ from gudhi.wasserstein import wasserstein_distance
 from tslearn.metrics import dtw
 
 a = np.load('cost_matrices_output/gt.npy')
-c = np.load('cost_matrices_output/predicted.npy')
+b = np.load('cost_matrices_output/predicted.npy')
 # b = a
-b = np.load('cost_matrices_output/noisy.npy')
+c = np.load('cost_matrices_output/noisy.npy')
 
 
 # Pour la Vérité Terrain
@@ -37,6 +37,17 @@ diagram_H1_gt = np.array([pt[1] for pt in diagram_gt if pt[0] == 1])
 diagram_H1_pred = np.array([pt[1] for pt in diagram_pred if pt[0] == 1])
 
 
+dist_bottleneck_H0 = gudhi.bottleneck_distance(
+        diagram_H0_gt, diagram_H0_pred
+    )
+print("distance de bottleneck : ", dist_bottleneck_H0)
+
+dist_bottleneck_H1 = gudhi.bottleneck_distance(
+        diagram_H1_gt, diagram_H1_pred
+    )
+print("distance de bottleneck d1: ", dist_bottleneck_H1)
+
+n = float(a.shape[0])
 # Calculer ls distances entre les diagrammes
 # Bottleneck distance pour H0
 if len(diagram_H0_gt) > 0 and len(diagram_H0_pred) > 0:
@@ -61,11 +72,13 @@ else:
 # Wasserstein distance pour H0 (qualité globale)
 if len(diagram_H0_gt) > 0 and len(diagram_H0_pred) > 0:
     dist_wasserstein_H0 = wasserstein_distance(
-        diagram_H0_gt, diagram_H0_pred, order=2.0, internal_p=2.0
+        diagram_H0_gt, diagram_H0_pred, order=1.0, internal_p=2.0
     )
-    print(f"Distance de Wasserstein (H0): {dist_wasserstein_H0:.4f}")
+    print(f"Distance de Wasserstein (H0): {1 - (dist_wasserstein_H0 / n)}")
 else:
     print("Pas assez de points en H0 pour calculer la distance de Wasserstein.")
+
+exit()
 
 def safe_point_distance(pt1, pt2):
     # Gérer les infinis pour la distance L2 entre points de persistance
